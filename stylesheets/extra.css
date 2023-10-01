@@ -1,0 +1,15 @@
+:root {
+  --md-primary-fg-color:        #ff914d;
+  --md-primary-fg-color--light: #fa9e65;
+  --md-primary-fg-color--dark:  #d16623;
+}
+
+.md-button:hover {
+  background-color: var(--md-primary-fg-color--dark) !important;
+  border-color: var(--md-primary-fg-color--dark) !important;
+}
+
+.admonition.note {
+  border-color: var(--md-primary-fg-color--dark) !important;
+  font-size: 1em;
+}
