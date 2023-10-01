@@ -1,7 +1,7 @@
 :root {
-  --md-primary-fg-color:        #ff914d;
-  --md-primary-fg-color--light: #fa9e65;
-  --md-primary-fg-color--dark:  #d16623;
+  --md-primary-fg-color:        #56C8CC;
+  --md-primary-fg-color--light: #5fd7db;
+  --md-primary-fg-color--dark:  #43adb1;
 }
 
 .md-button:hover {
