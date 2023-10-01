@@ -122,30 +122,40 @@ Additionally, Cloney generates three other files, namely `USD.html`, `EUR.html`,
 
 While Cloney's dynamic file generation is a powerful feature, there are certain limitations and workarounds to consider when working with it.
 
-### Limitation: Accessing Root-Level Variables
+### Limitation: Variable Scopes in Dynamic File Generation
 
-In the example provided, accessing root-level variables like `app_name` from within the `currency-file-content` template can be challenging. This is because the context within the template is limited to the data passed to it, and it does not have direct access to variables defined outside the template.
+When working with Cloney's dynamic file generation, one notable limitation is related to variable scopes. In the example provided, the challenge lies in accessing variables defined in the outer scope, which may not be directly accessible within the `currency-file-content` template. This is because the context within the template is limited to the data passed to it, and it may not grant direct access to variables defined outside the template.
 
-### Workaround: Using a Dictionary
+### Workaround: Using a Dictionary to Pass Context
 
-To access root-level variables within a dynamically generated template, you can use a dictionary to store both the root-level variables and the parameters needed for the `currency-file-content` template. Here's how to do it:
+To address the issue of variable scopes and ensure that the `currency-file-content` template can access all the necessary variables, a workaround involves using a dictionary. This dictionary is used to encapsulate the required variables, both from the outer scope and the local context, and pass them as a single context to the `toFile` function.
+
+Here's how to implement this workaround:
 
 ```html
-{{- $dict := dict "root" $ "param" . -}}
+{{- $dict := dict "outer" $ "local" . -}}
 {{- toFile $fileName "currency-file-content" $dict -}}
 ```
 
-In this code, a dictionary named `$dict` is created, which contains two key-value pairs: `"root"` and `"param"`. `"root"` is assigned the value of the root-level context (`$`), and `"param"` is assigned the value of the current currency data (`.`).
+In this code, a dictionary named `$dict` is created to hold two key-value pairs: `"outer"` and `"local"`. `"outer"` is assigned the value of the outer scope context (`$`), while `"local"` is assigned the value of the current currency data (`.`).
 
 ### Accessing Variables in the Template
 
-With the dictionary approach, you can now access root-level variables and parameters in the `currency-file-content` template as follows:
+After implementing the workaround of using a dictionary to encapsulate both outer scope and local variables, you can access these variables within the `currency-file-content` template as follows:
 
 ```html
 {{- define "currency-file-content" -}}
-<p>The app name is: {{ .root.app_name }}</p>
-<p>The currency name is: {{ .param.name }}</p>
+<p>The app name is: {{ .outer.app_name }}</p>
+<p>The currency name is: {{ .local.name }}</p>
 {{- end -}}
 ```
 
-By using this workaround, you can access both root-level and local variables within your dynamically generated files.
+!!! note ""
+
+    `{{ .outer.app_name }}` accesses the `app_name` variable from the outer scope, which might not have been directly accessible within the template. The `.outer` context represents the outer scope context, and you can access any variable defined outside the template block.
+
+!!! note ""
+
+    `{{ .local.name }}` accesses the `name` variable from the local context, which contains data specific to the current currency being processed. The `.local` context provides access to all variables passed as local context data, ensuring you can work seamlessly with variables specific to the current block.
+
+By adopting this approach, you can effectively address variable scope challenges and ensure that the `currency-file-content` template has access to all the variables it needs to generate dynamic files accurately. This method allows for flexibility in working with variables, both from the outer scope and the local context, within your dynamically generated templates.

@@ -27,10 +27,10 @@ After the download is complete, you will need to unzip the downloaded file. Once
 
 Now that you have Cloney installed on your system, you're ready to start working with Cloney templates. Depending on your goals, you can choose one of two paths:
 
-### Path 1: Using Cloney Templates as a User
+### User's Path: Using Cloney Templates as a User
 
 If you want to leverage existing Cloney templates created by others, follow the path of a user. You can explore and clone templates tailored to various use cases. To get started as a user, head over to the [User's Guide](/users) for detailed instructions on how to clone and customize Cloney templates.
 
-### Path 2: Creating Your Own Cloney Templates as a Creator
+### Creator's Path: Creating Your Own Cloney Templates as a Creator
 
 If you're interested in crafting your own Cloney templates and sharing them with the community, follow the path of a creator. You can design templates, define variables, and empower others to generate projects based on your templates. To start creating templates as a creator, visit the [Creator's Guide](/creators) for comprehensive guidance on template creation and customization.

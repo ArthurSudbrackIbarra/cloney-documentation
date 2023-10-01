@@ -2,11 +2,9 @@
 
 Have you ever found yourself in the situation where you discover a fantastic template Git repository on GitHub, only to realize that it doesn't quite fit your unique project requirements? You're not alone. Traditional Git templates often leave you with the burden of customizing every detail manually, which can be time-consuming and error-prone. This is where Cloney comes to the rescue.
 
-<br>
 <p align="center">
   <img src="images/cloney-logo.png">
 </p>
-<br>
 
 ## The Pain of Manual Adjustments
 
@@ -25,8 +23,6 @@ With Cloney, you no longer need to manually tweak code, search for placeholders,
 - Use Go templates, a powerful and flexible templating language, to dynamically generate files and directories based on your provided variables.
 
 - Focus on your project's unique requirements and let Cloney handle the repetitive and error-prone customization tasks.
-
-Cloney's goal is to streamline the process of utilizing Git template repositories, enabling you to create projects faster and with greater accuracy. Whether you're a developer looking to bootstrap a new project or a maintainer of template repositories, Cloney has you covered.
 
 ## Key Features of Cloney
 
