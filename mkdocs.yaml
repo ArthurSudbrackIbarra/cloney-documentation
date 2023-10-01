@@ -1,0 +1,65 @@
+site_name: Cloney Documentation
+site_description: Documentation for Cloney, the dynamic template generator for Git repositories.
+repo_url: https://github.com/ArthurSudbrackIbarra/cloney-docs
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for light mode.
+    - scheme: default
+      primary: custom
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode.
+    - scheme: slate
+      primary: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    logo: material/library
+  favicon: images/cloney-logo.png
+  language: en
+  features:
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+    - navigation.instant
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - What Are Cloney Template Repositories?: cloney-template-repositories.md
+  - Create Your Own Cloney Template Repository:
+      - The .cloney.yaml Metadata File: creators/cloney-metadata-file.md
+      - Acessing Variables: creators/accessing-template-variables.md
+      - Dynamic File Generation: creators/dynamic-file-generation.md
+      - Go Template Tutorials: creators/go-template-tutorials.md
+  - Use Someone Else's Cloney Template Repository:
+      - Providing Custom Variables: users/providing-custom-variables.md
+  - Cloney Command-Line Interface (CLI): cloney-cli.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/ArthurSudbrackIbarra/cloney-docs
