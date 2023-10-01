@@ -4,4 +4,6 @@ If you're looking to use existing Cloney Template Repositories created by others
 
 ## Providing Custom Variables
 
-Learn how to provide custom variables when cloning a Cloney Template Repository, allowing you to customize templates to suit your project's needs. [Explore Providing Custom Variables](providing-custom-variables.md)
+Learn how to provide custom variables when cloning a Cloney Template Repository, allowing you to customize templates to suit your project's needs.
+
+[Explore Providing Custom Variables](providing-custom-variables.md)

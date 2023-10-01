@@ -12,12 +12,12 @@ Refer to the table below to select the download button that matches your operati
 
 | **Operating System**  | **Architecture** | **Download Link** |
 |-----------------------|------------------|-------------------|
-| **Windows**           | AMD64            | [Download :material-download:](link){ .md-button .md-button--primary }  |
-|                       | ARM64            | [Download :material-download:](link){ .md-button .md-button--primary }  |
-| **Linux**             | AMD64            | [Download :material-download:](link){ .md-button .md-button--primary }  |
-|                       | ARM64            | [Download :material-download:](link){ .md-button .md-button--primary }  |
-| **macOS**             | AMD64            | [Download :material-download:](link){ .md-button .md-button--primary }  |
-|                       | ARM64            | [Download :material-download:](link){ .md-button .md-button--primary }  |
+| **Windows**           | AMD64            | [Download :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.0/cloney-windows-amd64.zip){ .md-button .md-button--primary }  |
+|                       | ARM64            | [Download :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.0/cloney-windows-arm64.zip){ .md-button .md-button--primary }  |
+| **Linux**             | AMD64            | [Download :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.0/cloney-linux-amd64.zip){ .md-button .md-button--primary }  |
+|                       | ARM64            | [Download :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.0/cloney-linux-arm64.zip){ .md-button .md-button--primary }  |
+| **macOS**             | AMD64            | [Download :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.0/cloney-darwin-amd64.zip){ .md-button .md-button--primary }  |
+|                       | ARM64            | [Download :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.0/cloney-darwin-arm64.zip){ .md-button .md-button--primary }  |
 
 ### Step 2: Add Cloney to Your System's PATH
 
@@ -29,8 +29,8 @@ Now that you have Cloney installed on your system, you're ready to start working
 
 ### User's Path: Using Cloney Templates as a User
 
-If you want to leverage existing Cloney templates created by others, follow the path of a user. You can explore and clone templates tailored to various use cases. To get started as a user, head over to the [User's Guide](/users) for detailed instructions on how to clone and customize Cloney templates.
+If you want to leverage existing Cloney templates created by others, follow the path of a user. You can explore and clone templates tailored to various use cases. To get started as a user, head over to the [User's Guide](users/index.md) for detailed instructions on how to clone and customize Cloney templates.
 
 ### Creator's Path: Creating Your Own Cloney Templates as a Creator
 
-If you're interested in crafting your own Cloney templates and sharing them with the community, follow the path of a creator. You can design templates, define variables, and empower others to generate projects based on your templates. To start creating templates as a creator, visit the [Creator's Guide](/creators) for comprehensive guidance on template creation and customization.
+If you're interested in crafting your own Cloney templates and sharing them with the community, follow the path of a creator. You can design templates, define variables, and empower others to generate projects based on your templates. To start creating templates as a creator, visit the [Creator's Guide](creators/index.md) for comprehensive guidance on template creation and customization.
