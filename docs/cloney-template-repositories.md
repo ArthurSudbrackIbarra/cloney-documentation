@@ -2,7 +2,7 @@
 
 A Cloney Template Repository serves as the foundation for creating dynamic Git repositories using Cloney. It contains essential information and structures that allow users to customize and generate project templates tailored to their specific needs.
 
-## What Is a Cloney Template Repository?
+## What is a Cloney Template Repository?
 
 A Cloney Template Repository is a regular Git repository enriched with a special configuration file, `.cloney.yaml`, which defines the characteristics and variables of the template. This configuration file serves as the control center for your template, enabling dynamic content generation during the cloning process.
 
@@ -10,9 +10,13 @@ A Cloney Template Repository is a regular Git repository enriched with a special
 
 A Cloney Template Repository consists of the following key components:
 
-1. **Git Repository**: The core of your project, containing all the files, directories, and code that you want to share as a template.
+!!! note ""
 
-2. **`.cloney.yaml` Metadata File**: This special YAML file is located in the root of the repository and stores essential details about the template, such as variable definitions, descriptions, and other crucial information that Cloney relies on to generate dynamic templates.
+    **1. Git Repository**: The core of your project, containing all the files, directories, and code that you want to share as a template.
+
+!!! note ""
+
+    **2. `.cloney.yaml` Metadata File**: This special YAML file is located in the root of the repository and stores essential details about the template, such as variable definitions, descriptions, and other crucial information that Cloney relies on to generate dynamic templates.
 
 ### The Power of Variables
 
@@ -36,7 +40,7 @@ With these simple steps, you've transformed your standard Git repository into a 
 
 ## Discover Cloney Templates in Action
 
-Explore Cloney templates and see how they work by visiting the [Cloney Example Template Repository](https://github.com/ArthurSudbrackIbarra/cloney-test). Here, you can:
+Explore Cloney templates and see how they work by visiting the [Cloney Example Template Repository](https://github.com/ArthurSudbrackIbarra/cloney-example). Here, you can:
 
 - Explore its structure.
 - Check out its `.cloney.yaml` metadata file.

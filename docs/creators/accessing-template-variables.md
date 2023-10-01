@@ -33,11 +33,17 @@ Here's a snippet from your template HTML file, `index.html`:
 
 Now, let's break down what's happening here:
 
-- `{{ .app_name }}`: This placeholder will be replaced with the user-defined name of the application when you generate your customized template.
+!!! note ""
 
-- `{{- range .currencies }} ... {{- end }}`: This construct iterates through the list of currencies provided by the user during the cloning process. It dynamically generates list items for each currency.
+    `{{ .app_name }}`: This placeholder will be replaced with the user-defined name of the application when you generate your customized template.
 
-- `{{- if .enable_https }} ... {{- end }}`: This conditional block checks if the user has chosen to enable HTTPS during cloning. If so, it includes a paragraph indicating that HTTPS is enabled.
+!!! note ""
+
+    `{{- range .currencies }} ... {{- end }}`: This construct iterates through the list of currencies provided by the user during the cloning process. It dynamically generates list items for each currency.
+
+!!! note ""
+
+    `{{- if .enable_https }} ... {{- end }}`: This conditional block checks if the user has chosen to enable HTTPS during cloning. If so, it includes a paragraph indicating that HTTPS is enabled.
 
 When you use Cloney to create your template based on user input, it automatically populates these placeholders with the values you specified during the cloning process. This results in a tailored HTML file that perfectly suits your requirements.
 
@@ -56,4 +62,4 @@ Here's an example of what the generated HTML could look like:
 <p>HTTPS is enabled.</p>
 ```
 
-**PS**: It's important to mention that, although this example uses HTML, you can use Cloney variables in any type of file. This includes YAML, JSON, Markdown, and even source code files.
+It's important to mention that, although this example uses HTML, you can use Cloney variables in any type of file. This includes YAML, JSON, Markdown, and even source code files.

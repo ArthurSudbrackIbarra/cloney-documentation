@@ -1,4 +1,4 @@
-# Welcome to Cloney Documentation
+# Cloney Official Documentation
 
 Have you ever found yourself in the situation where you discover a fantastic template Git repository on GitHub, only to realize that it doesn't quite fit your unique project requirements? You're not alone. Traditional Git templates often leave you with the burden of customizing every detail manually, which can be time-consuming and error-prone. This is where Cloney comes to the rescue.
 
@@ -16,7 +16,7 @@ This process can be both frustrating and error-prone. Manually searching and rep
 
 ## Introducing Cloney Template Repositories
 
-Cloney Template Repositories are the heart of Cloney's innovative approach. These repositories are enriched with a special `.cloney.yaml` metadata file that contains information about the template repository. This metadata file defines variables, configurations, and dynamic file generation instructions, making the template adaptable to various use cases.
+Cloney Template Repositories are the heart of Cloney's innovative approach. These repositories are enriched with a special `.cloney.yaml` metadata file that contains information about the template repository. This metadata file defines variables and configurations, making the template adaptable to various use cases.
 
 With Cloney, you no longer need to manually tweak code, search for placeholders, or worry about consistency. Instead, you can:
 
@@ -26,7 +26,7 @@ With Cloney, you no longer need to manually tweak code, search for placeholders,
 
 - Focus on your project's unique requirements and let Cloney handle the repetitive and error-prone customization tasks.
 
-Cloney's goal is to streamline the process of utilizing Git templates, enabling you to create projects faster and with greater accuracy. Whether you're a developer looking to bootstrap a new project or a maintainer of template repositories, Cloney has you covered.
+Cloney's goal is to streamline the process of utilizing Git template repositories, enabling you to create projects faster and with greater accuracy. Whether you're a developer looking to bootstrap a new project or a maintainer of template repositories, Cloney has you covered.
 
 ## Key Features of Cloney
 
@@ -40,10 +40,6 @@ Cloney's goal is to streamline the process of utilizing Git templates, enabling 
 
 - **Community:** Join a growing community of developers and template maintainers who share and collaborate on Cloney Template Repositories.
 
-Now that you have a glimpse of what Cloney can do, it's time to dive deeper into how to use it effectively. In the following sections of this documentation, we'll explore various aspects of Cloney, including creating your own Cloney Template Repositories and using existing ones. Let's get started!
-
 ## Getting Started with Cloney
 
-Ready to get started with Cloney? Head over to the [Getting Started](getting-started.md) guide to set up Cloney and begin using it for your Git projects. It's a breeze to streamline your workflows and improve collaboration with Cloney's dynamic template generation.
-
-If you're new to Cloney or looking for specific information, feel free to use the search bar at the top right to find relevant content across the documentation.
+Now that you have a glimpse of what Cloney can do, it's time to dive deeper into how to use it effectively. Head over to the [Getting Started](getting-started.md) guide to set up Cloney and begin using it for your Git projects.
