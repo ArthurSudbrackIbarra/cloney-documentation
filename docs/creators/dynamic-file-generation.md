@@ -61,13 +61,22 @@ You can start by creating a `home.html` file that dynamically generates the cont
 
 Let's break down what's happening within this template:
 
-1. `{{- define "currency-file-content" -}} ... {{- end -}}`: This defines a template named `currency-file-content` that will be used to generate the content of each currency's page.
+!!! note ""
 
-2. `{{- range .currencies }} ... {{- end }}`: This iterates through the list of currencies provided in your YAML data.
+    `{{- define "currency-file-content" -}} ... {{- end -}}`: This defines a template named `currency-file-content` that will be used to generate the content of each currency's page.
 
-3. `{{- $fileName := printf "%s.html" .name }}`: This creates a variable named `fileName` to store the name of the file to be generated. The file name will be constructed using the currency's name with the `.html` extension.
+!!! note ""
 
-4. `{{- toFile $fileName "currency-file-content" . }}`: This generates a file named `fileName` using the `currency-file-content` template and the current currency as the context. This is where the dynamic file generation happens.
+    `{{- range .currencies }} ... {{- end }}`: This iterates through the list of currencies provided in your YAML data.
+
+!!! note ""
+
+    `{{- $fileName := printf "%s.html" .name }}`: This creates a variable named `fileName` to store the name of the file to be generated. The file name will be constructed using the currency's name with the `.html` extension.
+
+!!! note ""
+
+    `{{- toFile $fileName "currency-file-content" . }}`: This generates a file named `fileName` using the `currency-file-content` template and the current currency as the context. This is where the dynamic file generation happens.
+
 
 ### Generated Output
 

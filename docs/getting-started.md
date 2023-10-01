@@ -34,5 +34,3 @@ If you want to leverage existing Cloney templates created by others, follow the 
 ### Path 2: Creating Your Own Cloney Templates as a Creator
 
 If you're interested in crafting your own Cloney templates and sharing them with the community, follow the path of a creator. You can design templates, define variables, and empower others to generate projects based on your templates. To start creating templates as a creator, visit the [Creator's Guide](/creators) for comprehensive guidance on template creation and customization.
-
-Choose the path that aligns with your objectives, and let Cloney simplify your Git repository management. Whether you're a user or a creator, Cloney offers a straightforward and efficient way to work with Git templates. Happy templating!

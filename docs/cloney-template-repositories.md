@@ -10,9 +10,13 @@ A Cloney Template Repository is a regular Git repository enriched with a special
 
 A Cloney Template Repository consists of the following key components:
 
-1. **Git Repository**: The core of your project, containing all the files, directories, and code that you want to share as a template.
+!!! note ""
 
-2. **`.cloney.yaml` Metadata File**: This special YAML file is located in the root of the repository and stores essential details about the template, such as variable definitions, descriptions, and other crucial information that Cloney relies on to generate dynamic templates.
+    **1. Git Repository**: The core of your project, containing all the files, directories, and code that you want to share as a template.
+
+!!! note ""
+
+    **2. `.cloney.yaml` Metadata File**: This special YAML file is located in the root of the repository and stores essential details about the template, such as variable definitions, descriptions, and other crucial information that Cloney relies on to generate dynamic templates.
 
 ### The Power of Variables
 

@@ -11,4 +11,5 @@
 
 .admonition.note {
   border-color: var(--md-primary-fg-color--dark) !important;
+  font-size: 1em;
 }
