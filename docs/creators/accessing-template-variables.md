@@ -56,4 +56,6 @@ Here's an example of what the generated HTML could look like:
 <p>HTTPS is enabled.</p>
 ```
 
-**PS**: It's important to mention that, although this example uses HTML, you can use Cloney variables in any type of file. This includes YAML, JSON, Markdown, and even source code files.
+!!! note ""
+
+    It's important to mention that, although this example uses HTML, you can use Cloney variables in any type of file. This includes YAML, JSON, Markdown, and even source code files.
