@@ -1,6 +1,6 @@
 site_name: Cloney Documentation
 site_description: Documentation for Cloney, the dynamic template generator for Git repositories.
-repo_url: https://github.com/ArthurSudbrackIbarra/cloney-docs
+repo_url: https://github.com/ArthurSudbrackIbarra/cloney-documentation
 
 theme:
   name: material
@@ -18,9 +18,8 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  icon:
-    logo: material/library
-  favicon: images/cloney-logo.png
+  logo: images/cloney-logo-no-text.png
+  favicon: images/cloney-logo-no-text.png
   language: en
   features:
     - content.code.copy
@@ -32,13 +31,15 @@ nav:
   - Home: index.md
   - Getting Started: getting-started.md
   - What Are Cloney Template Repositories?: cloney-template-repositories.md
-  - Create Your Own Cloney Template Repository:
+  - User's Path:
+      - Using Someone Else's Template Repository: users/index.md
+      - Providing Custom Variables: users/providing-custom-variables.md
+  - Creator's Path:
+      - Create Your Own Template Repository: creators/index.md
       - The .cloney.yaml Metadata File: creators/cloney-metadata-file.md
       - Acessing Variables: creators/accessing-template-variables.md
       - Dynamic File Generation: creators/dynamic-file-generation.md
       - Go Template Tutorials: creators/go-template-tutorials.md
-  - Use Someone Else's Cloney Template Repository:
-      - Providing Custom Variables: users/providing-custom-variables.md
   - Cloney Command-Line Interface (CLI): cloney-cli.md
 
 markdown_extensions:
@@ -67,4 +68,6 @@ extra_css:
 extra:
   social:
     - icon: fontawesome/brands/github-alt
-      link: https://github.com/ArthurSudbrackIbarra/cloney-docs
+      link: https://github.com/ArthurSudbrackIbarra
+    - icon: fontawesome/brands/linkedin-in
+      link: https://www.linkedin.com/in/arthur-sudbrack-ibarra-88399423a/
