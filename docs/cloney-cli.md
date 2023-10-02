@@ -10,7 +10,7 @@ The `cloney start` command allows you to create a new Cloney Template Repository
 cloney start
 ```
 
-![Start Command](../images/commands/start.png)
+![Start Command](images/commands/start.png)
 
 ## Info Command
 
@@ -34,7 +34,7 @@ The `cloney info` command provides information about a Cloney Template Repositor
   cloney info https://github.com/username/template-repo.git
   ```
 
-![Info Command](../images/commands/info.png)
+![Info Command](images/commands/info.png)
 
 ## Clone Command
 
@@ -52,7 +52,7 @@ The `cloney clone` command allows you to clone a Cloney Template Repository with
   cloney clone https://github.com/username/template-repo.git -v '{ app_name: "MyApp", enable_https: true }'
   ```
 
-![Clone Command](../images/commands/clone.png)
+![Clone Command](images/commands/clone.png)
 
 ## Dry Run Command
 
@@ -62,4 +62,4 @@ The `cloney dry-run` command is used to debug your own Cloney Template Repositor
 cloney dry-run -v my-vars.yaml
 ```
 
-![Dry Run Command](../images/commands/dry-run.png)
+![Dry Run Command](images/commands/dry-run.png)

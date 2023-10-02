@@ -6,7 +6,7 @@ Cloney, allows you to not only replace placeholders with variable values but als
 
 Suppose you have a YAML variables file like the one below:
 
-```yaml
+```yaml title=".cloney-vars.yaml"
 app_name: MyApp
 currencies:
   - name: USD
@@ -26,7 +26,7 @@ Your goal is to create a home page that lists all the currencies and links to a 
 
 You can start by creating a `home.html` file that dynamically generates the content for each currency and generates links to their respective pages.
 
-```html
+```html title="home.html" hl_lines="3-18 25"
 <!-- File: home.html -->
 
 {{- define "currency-file-content" -}}
@@ -82,7 +82,7 @@ Let's break down what's happening within this template:
 
 When Cloney processes this template, it generates several files. The `home.html` file will have the following content:
 
-```html
+```html title="home.html"
 <!-- File: home.html -->
 
 <p>Check out the different currencies:</p>
@@ -101,7 +101,7 @@ When Cloney processes this template, it generates several files. The `home.html`
 
 Additionally, Cloney generates three other files, namely `USD.html`, `EUR.html`, and `GBP.html`, each containing content specific to the respective currency:
 
-```html
+```html title="USD.html"
 <!-- File: USD.html -->
 
 <!DOCTYPE html>
@@ -132,7 +132,7 @@ To address the issue of variable scopes and ensure that the `currency-file-conte
 
 Here's how to implement this workaround:
 
-```html
+```html title="home.html" hl_lines="1"
 {{- $dict := dict "outer" $ "local" . -}}
 {{- toFile $fileName "currency-file-content" $dict -}}
 ```
@@ -143,7 +143,7 @@ In this code, a dictionary named `$dict` is created to hold two key-value pairs:
 
 After implementing the workaround of using a dictionary to encapsulate both outer scope and local variables, you can access these variables within the `currency-file-content` template as follows:
 
-```html
+```html title="home.html" hl_lines="2 3"
 {{- define "currency-file-content" -}}
 <p>The app name is: {{ .outer.app_name }}</p>
 <p>The currency name is: {{ .local.name }}</p>

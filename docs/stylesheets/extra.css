@@ -13,3 +13,8 @@
   border-color: var(--md-primary-fg-color--dark) !important;
   font-size: 1em;
 }
+
+.highlight .hll {
+  background-color: #5fd7db1c !important;
+  box-shadow: 2px 0 0 0 var(--md-primary-fg-color--dark) inset !important;
+}

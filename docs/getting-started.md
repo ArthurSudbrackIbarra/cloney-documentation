@@ -12,12 +12,12 @@ Refer to the table below to select the download button that matches your operati
 
 | **Operating System**  | **Architecture** | **Download Link** |
 |-----------------------|------------------|-------------------|
-| **Windows**           | AMD64            | [Download :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.0/cloney-windows-amd64.zip){ .md-button .md-button--primary }  |
-|                       | ARM64            | [Download :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.0/cloney-windows-arm64.zip){ .md-button .md-button--primary }  |
-| **Linux**             | AMD64            | [Download :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.0/cloney-linux-amd64.zip){ .md-button .md-button--primary }  |
-|                       | ARM64            | [Download :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.0/cloney-linux-arm64.zip){ .md-button .md-button--primary }  |
-| **macOS**             | AMD64            | [Download :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.0/cloney-darwin-amd64.zip){ .md-button .md-button--primary }  |
-|                       | ARM64            | [Download :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.0/cloney-darwin-arm64.zip){ .md-button .md-button--primary }  |
+| **Windows**           | AMD64            | [Download Latest (0.1.1) :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.1/cloney-windows-amd64.zip){ .md-button .md-button--primary }  |
+|                       | ARM64            | [Download Latest (0.1.1) :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.1/cloney-windows-arm64.zip){ .md-button .md-button--primary }  |
+| **Linux**             | AMD64            | [Download Latest (0.1.1) :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.1/cloney-linux-amd64.zip){ .md-button .md-button--primary }  |
+|                       | ARM64            | [Download Latest (0.1.1) :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.1/cloney-linux-arm64.zip){ .md-button .md-button--primary }  |
+| **macOS**             | AMD64            | [Download Latest (0.1.1) :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.1/cloney-darwin-amd64.zip){ .md-button .md-button--primary }  |
+|                       | ARM64            | [Download Latest (0.1.1) :material-download:](https://github.com/ArthurSudbrackIbarra/cloney/releases/download/0.1.1/cloney-darwin-arm64.zip){ .md-button .md-button--primary }  |
 
 ### Step 2: Add Cloney to Your System's PATH
 

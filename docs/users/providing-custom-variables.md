@@ -6,7 +6,7 @@ When working with Cloney Template Repositories, users can easily customize varia
 
 To provide custom values for the variables, create a YAML variables file. In this file, you'll define the values you want to assign to the variables. Here's an example of a YAML variables file:
 
-```yaml
+```yaml title=".cloney-vars.yaml"
 app_name: My App
 enable_https: true
 currencies:
