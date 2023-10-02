@@ -3,7 +3,7 @@
   --md-primary-fg-color--light: #5fd7db;
   --md-primary-fg-color--dark: #43adb1;
 
-  --md-typeset-a-color: #bcdb34;
+  --md-footer-bg-color: #43adb1;
 }
 
 .md-typeset h1,
@@ -35,4 +35,8 @@
 .highlight .hll {
   background-color: #5fd7db1c !important;
   box-shadow: 2px 0 0 0 var(--md-primary-fg-color--dark) inset !important;
+}
+
+footer.md-footer {
+  background-color: var(--md-primary-fg-color--dark) !important;
 }
