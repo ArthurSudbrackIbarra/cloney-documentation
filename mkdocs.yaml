@@ -26,6 +26,7 @@ theme:
     - search.suggest
     - search.highlight
     - navigation.instant
+    - content.tabs.link
 
 nav:
   - Home: index.md
@@ -56,6 +57,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - attr_list
+  - pymdownx.tabbed:
+      alternate_style: true
   - toc:
       permalink: true
 

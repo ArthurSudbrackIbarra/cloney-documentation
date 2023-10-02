@@ -26,18 +26,6 @@ One of the primary strengths of Cloney Template Repositories is the ability to d
 
 The `.cloney.yaml` metadata file also allows you to configure some aspects of your template. These configurations are optional and can be omitted if you don't require them. For example, you can define paths to ignore when cloning the template, ensuring that specific files or directories are excluded from the customization process.
 
-### Creating Your Own Cloney Template Repository
-
-To create your Cloney Template Repository, follow these steps:
-
-1. Set up a Git repository for your project, including all the files and directories you want to include in your template.
-
-2. Create a `.cloney.yaml` file in the root of your repository. In this file, define the template's metadata, variables, and any optional configurations.
-
-3. Commit and push your changes to your Git repository.
-
-With these simple steps, you've transformed your standard Git repository into a Cloney Template Repository, ready to be customized and cloned by others.
-
 ## Discover Cloney Templates in Action
 
 Explore Cloney templates and see how they work by visiting the [Cloney Example Template Repository](https://github.com/ArthurSudbrackIbarra/cloney-example). Here, you can:
