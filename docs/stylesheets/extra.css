@@ -69,3 +69,19 @@ body[data-md-color-scheme="slate"] .md-typeset h3 {
 footer.md-footer {
   background-color: var(--md-primary-fg-color--dark) !important;
 }
+
+/* Animation to make an element pulse */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pulse {
+  animation: pulse 2s infinite;
+}
