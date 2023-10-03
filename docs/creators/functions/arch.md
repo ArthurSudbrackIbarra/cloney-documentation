@@ -35,4 +35,4 @@ To start the 'abc' service, run the following command:
 ```
 
 !!!info "Compatibility"
-    This function is compatible with Cloney versions `v0.1.0` and above.
+    This function is available in Cloney 0.1.0 and later.

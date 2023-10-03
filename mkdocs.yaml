@@ -52,7 +52,14 @@ nav:
           - os: creators/functions/os.md
           - arch: creators/functions/arch.md
       - Go Template Tutorials: creators/go-template-tutorials.md
-  - Cloney Command-Line Interface (CLI): cloney-cli.md
+  - Cloney Command-Line Interface (CLI):
+      - commands/index.md
+      - clone: commands/clone.md
+      - dry-run: commands/dry-run.md
+      - info: commands/info.md
+      - start: commands/start.md
+      - validate: commands/validate.md
+      - version: commands/version.md
 
 markdown_extensions:
   - pymdownx.highlight:
