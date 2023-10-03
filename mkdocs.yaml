@@ -27,7 +27,6 @@ theme:
     - content.code.copy
     - search.suggest
     - search.highlight
-    - navigation.instant
     - content.tabs.link
     - navigation.footer
     - navigation.indexes
@@ -81,6 +80,9 @@ plugins:
 
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/ua-parser-js/src/ua-parser.min.js
+  - scripts/extra.js
 
 extra:
   social:
