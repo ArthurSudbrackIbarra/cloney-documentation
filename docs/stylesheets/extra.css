@@ -87,11 +87,12 @@ footer.md-footer {
 .pulse {
   animation: pulse 2s infinite;
 }
-.download-windows-amd64::after, .download-windows-arm64.pulse,
-.download-linux-amd64.pulse,
-.download-linux-arm64.pulse,
-.download-macos-amd64.pulse,
-.download-macos-arm64.pulse {
+.download-windows-amd64.pulse::after,
+.download-windows-arm64.pulse::after,
+.download-linux-amd64.pulse::after,
+.download-linux-arm64.pulse::after,
+.download-macos-amd64.pulse::after,
+.download-macos-arm64.pulse::after {
   content: "Your System";
   width: 100px;
   height: 20px;
