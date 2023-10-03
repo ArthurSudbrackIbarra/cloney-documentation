@@ -1,5 +1,3 @@
-Certainly, here's an updated version of the Cloney documentation with the requested changes:
-
 # Official Cloney Documentation
 
 Have you ever found yourself in the situation where you discover a fantastic template Git repository on GitHub, only to realize that it doesn't quite fit your unique project requirements? You're not alone. Traditional Git templates often leave you with the burden of customizing every detail manually, which can be time-consuming and error-prone. This is where Cloney comes to the rescue.

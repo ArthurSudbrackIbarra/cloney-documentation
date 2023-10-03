@@ -32,12 +32,14 @@ theme:
     - navigation.footer
     - navigation.indexes
     - navigation.top
+    - navigation.tracking
     - toc.follow
+    - navigation.sections
 
 nav:
   - Introduction: index.md
   - Getting Started: getting-started.md
-  - What Are Cloney Template Repositories?: cloney-template-repositories.md
+  - Cloney Template Repositories: cloney-template-repositories.md
   - User's Path:
       - users/index.md
       - Providing Custom Variables: users/providing-custom-variables.md
