@@ -24,7 +24,7 @@ Explore the intricacies of dynamic file generation within Cloney templates, enab
 
 Learn how to use Cloney custom template functions to maximize your template customization capabilities.
 
-[Explore Cloney Template Functions](cloney-template-functions.md)
+[Explore Cloney Template Functions](functions/index.md)
 
 ## Go Template Tutorials
 

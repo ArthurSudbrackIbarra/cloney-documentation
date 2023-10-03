@@ -60,6 +60,11 @@ body[data-md-color-scheme="slate"] .md-typeset h3 {
   box-shadow: 2px 0 0 0 var(--md-primary-fg-color--dark) inset !important;
 }
 
+/* Change the 'Back to Top' button hover color */
+.md-top:focus, .md-top:hover {
+  background-color: var(--md-primary-fg-color--dark) !important;
+}
+
 /* Change the footer background color to match the primary color */
 footer.md-footer {
   background-color: var(--md-primary-fg-color--dark) !important;

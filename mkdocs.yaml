@@ -30,21 +30,24 @@ theme:
     - navigation.instant
     - content.tabs.link
     - navigation.footer
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
 
 nav:
-  - Home: index.md
+  - Introduction: index.md
   - Getting Started: getting-started.md
   - What Are Cloney Template Repositories?: cloney-template-repositories.md
   - User's Path:
-      - Using Someone Else's Template Repository: users/index.md
+      - users/index.md
       - Providing Custom Variables: users/providing-custom-variables.md
   - Creator's Path:
-      - Create Your Own Template Repository: creators/index.md
+      - creators/index.md
       - The .cloney.yaml Metadata File: creators/cloney-metadata-file.md
       - Acessing Variables: creators/accessing-template-variables.md
       - Dynamic File Generation: creators/dynamic-file-generation.md
       - Cloney Template Functions:
-          - Introduction: creators/cloney-template-functions.md
+          - creators/functions/index.md
           - os: creators/functions/os.md
           - arch: creators/functions/arch.md
       - Go Template Tutorials: creators/go-template-tutorials.md
@@ -61,7 +64,7 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets:
       base_path: ./docs
-      check_paths: true
+      check_paths: false
   - pymdownx.superfences
   - admonition
   - pymdownx.details
