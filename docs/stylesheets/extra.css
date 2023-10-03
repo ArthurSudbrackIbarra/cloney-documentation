@@ -1,18 +1,35 @@
+/* Define primary color variables */
 :root {
   --md-primary-fg-color: #56c8cc;
   --md-primary-fg-color--light: #5fd7db;
   --md-primary-fg-color--dark: #43adb1;
-
-  --md-footer-bg-color: #43adb1;
+  --md-footer-bg-color: #43adb1; /* Define footer background color */
 }
 
+/* Make headers bold */
 .md-typeset h1,
 .md-typeset h2,
 .md-typeset h3 {
   font-weight: bold !important;
+}
+
+/* Make headers dark primary colored for the default (white) theme */
+body[data-md-color-scheme="default"] .md-typeset h1,
+body[data-md-color-scheme="default"] .md-typeset h2,
+body[data-md-color-scheme="default"] .md-typeset h3 {
+  font-weight: bold !important;
   color: var(--md-primary-fg-color--dark) !important;
 }
 
+/* Make headers white colored for the slate (dark) theme */
+body[data-md-color-scheme="slate"] .md-typeset h1,
+body[data-md-color-scheme="slate"] .md-typeset h2,
+body[data-md-color-scheme="slate"] .md-typeset h3 {
+  font-weight: bold !important;
+  color: white !important;
+}
+
+/* Change the color of links to match the primary color */
 .md-nav__link[for]:focus,
 .md-nav__link[for]:hover,
 .md-nav__link[href]:focus,
@@ -22,21 +39,28 @@
   color: var(--md-primary-fg-color--dark) !important;
 }
 
+/* Define button hover color */
 .md-button:hover {
   background-color: var(--md-primary-fg-color--dark) !important;
   border-color: var(--md-primary-fg-color--dark) !important;
 }
 
+/* Change the admonition note border color to match the primary color and increase font size */
 .admonition.note {
   border-color: var(--md-primary-fg-color--dark) !important;
   font-size: 1em;
 }
+.md-typeset .admonition.info {
+  border-color: var(--md-primary-fg-color--dark) !important;
+}
 
+/* Change the code-highlighting colors to match the primary color */
 .highlight .hll {
   background-color: #5fd7db1c !important;
   box-shadow: 2px 0 0 0 var(--md-primary-fg-color--dark) inset !important;
 }
 
+/* Change the footer background color to match the primary color */
 footer.md-footer {
   background-color: var(--md-primary-fg-color--dark) !important;
 }
