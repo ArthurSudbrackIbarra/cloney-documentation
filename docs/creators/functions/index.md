@@ -14,7 +14,7 @@ To use Cloney Template Functions in your templates, you can call them directly w
 
 Here is a list of some of the Cloney Template Functions available for your use:
 
-- `os`: Returns the user's operating system.
-- `arch`: Returns the user's operating system architecture.
+- [`os`](os.md): Returns the user's operating system.
+- [`arch`](arch.md): Returns the user's operating system architecture.
 
 Explore each function's documentation to understand its purpose and how to use it effectively in your templates.
