@@ -3,6 +3,7 @@
   --md-primary-fg-color: #56c8cc;
   --md-primary-fg-color--light: #5fd7db;
   --md-primary-fg-color--dark: #43adb1;
+  --md-primary-fg-color--darker: #2e7073;
   --md-footer-bg-color: #43adb1; /* Define footer background color */
 }
 
@@ -85,6 +86,23 @@ footer.md-footer {
 }
 .pulse {
   animation: pulse 2s infinite;
+}
+.download-windows-amd64::after, .download-windows-arm64.pulse,
+.download-linux-amd64.pulse,
+.download-linux-arm64.pulse,
+.download-macos-amd64.pulse,
+.download-macos-arm64.pulse {
+  content: "Your System";
+  width: 100px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  right: -2px;
+  top: -21px;
+  text-align: center;
+  background-color: var(--md-primary-fg-color--darker);
+  border-radius: 10px 10px 0 0;
+  font-size: 0.85em;
 }
 
 /* Cards */
