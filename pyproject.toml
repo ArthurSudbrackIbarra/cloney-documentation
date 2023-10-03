@@ -9,7 +9,6 @@ authors = [
 [tool.poetry.dependencies]
 python = "^3.10"
 mkdocs-material = "9.4.2"
-mkdocs-awesome-pages-plugin = "2.9.2"
 
 [build-system]
 requires = ["poetry-core"]

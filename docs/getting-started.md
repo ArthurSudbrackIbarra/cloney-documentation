@@ -13,9 +13,6 @@ Refer to the table below to select the download button that matches your operati
 === "Latest (0.1.1)"
     --8<-- "partials/download/_0.1.1.md"
 
-=== "0.1.0"
-    --8<-- "partials/download/_0.1.0.md"
-
 ### Step 2: Add Cloney to Your System's PATH
 
 After the download is complete, you will need to unzip the downloaded file. Once unzipped, add the Cloney executable to your system's PATH to make it accessible from the command line.

@@ -43,6 +43,10 @@ nav:
       - The .cloney.yaml Metadata File: creators/cloney-metadata-file.md
       - Acessing Variables: creators/accessing-template-variables.md
       - Dynamic File Generation: creators/dynamic-file-generation.md
+      - Cloney Template Functions:
+          - Introduction: creators/cloney-template-functions.md
+          - os: creators/functions/os.md
+          - arch: creators/functions/arch.md
       - Go Template Tutorials: creators/go-template-tutorials.md
   - Cloney Command-Line Interface (CLI): cloney-cli.md
 
@@ -69,10 +73,6 @@ markdown_extensions:
 
 plugins:
   - search
-  - awesome-pages:
-      filename: .pages
-      collapse_single_pages: true
-      strict: false
 
 extra_css:
   - stylesheets/extra.css
