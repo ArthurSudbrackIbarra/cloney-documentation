@@ -11,7 +11,7 @@ To begin your Cloney journey, follow these steps to install the Cloney CLI on yo
 Refer to the table below to select the download button that matches your operating system and architecture:
 
 === "Latest (0.1.1)"
-    --8<-- "partials/download/_0.1.1.md"
+    --8<-- "partials/downloads/_0.1.1.md"
 
 ### Step 2: Add Cloney to Your System's PATH
 
