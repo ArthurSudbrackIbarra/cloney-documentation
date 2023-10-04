@@ -71,26 +71,9 @@ footer.md-footer {
   background-color: var(--md-primary-fg-color--dark) !important;
 }
 
+/* Highlight the download button if the current OS and architecture matches the download button */
 .os-arch-selected {
   border: 4px solid var(--md-primary-fg-color--dark) !important;
-}
-.download-windows-amd64.os-arch-selected::after,
-.download-windows-arm64.os-arch-selected::after,
-.download-linux-amd64.os-arch-selected::after,
-.download-linux-arm64.os-arch-selected::after,
-.download-macos-amd64.os-arch-selected::after,
-.download-macos-arm64.os-arch-selected::after {
-  content: "Your System";
-  width: 100px;
-  height: 20px;
-  display: block;
-  position: absolute;
-  right: -3px;
-  top: -21px;
-  text-align: center;
-  background-color: var(--md-primary-fg-color--dark);
-  border-radius: 10px 10px 0 0;
-  font-size: 0.85em;
 }
 
 /* Cards */
