@@ -3,7 +3,7 @@
   --md-primary-fg-color: #56c8cc;
   --md-primary-fg-color--light: #5fd7db;
   --md-primary-fg-color--dark: #43adb1;
-  --md-primary-fg-color--darker: #2e7073;
+  --md-primary-fg-color--darkest: #409397;
   --md-footer-bg-color: #43adb1; /* Define footer background color */
 }
 
@@ -72,36 +72,24 @@ footer.md-footer {
   background-color: var(--md-primary-fg-color--dark) !important;
 }
 
-/* Animation to make an element pulse */
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
+.os-arch-selected {
+  border: 4px solid var(--md-primary-fg-color--darkest) !important;
 }
-.pulse {
-  animation: pulse 2s infinite;
-}
-.download-windows-amd64.pulse::after,
-.download-windows-arm64.pulse::after,
-.download-linux-amd64.pulse::after,
-.download-linux-arm64.pulse::after,
-.download-macos-amd64.pulse::after,
-.download-macos-arm64.pulse::after {
+.download-windows-amd64.os-arch-selected::after,
+.download-windows-arm64.os-arch-selected::after,
+.download-linux-amd64.os-arch-selected::after,
+.download-linux-arm64.os-arch-selected::after,
+.download-macos-amd64.os-arch-selected::after,
+.download-macos-arm64.os-arch-selected::after {
   content: "Your System";
   width: 100px;
   height: 20px;
   display: block;
   position: absolute;
-  right: -2px;
+  right: -3px;
   top: -21px;
   text-align: center;
-  background-color: var(--md-primary-fg-color--darker);
+  background-color: var(--md-primary-fg-color--darkest);
   border-radius: 10px 10px 0 0;
   font-size: 0.85em;
 }

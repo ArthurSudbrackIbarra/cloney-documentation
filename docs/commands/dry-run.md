@@ -10,7 +10,6 @@ By default, this command searches for a file named `.cloney-vars.yaml` in your c
 |--------------------------------|-------------------------------------------------------------------------------------------|----------------------------|
 | `-o, --output string`          | Specifies the path to output the filled template files.                                   | `"cloney-dry-run-results"` |
 | `-i, --output-in-terminal`     | Outputs the filled template file contents in the terminal instead of creating the files.  | `false`                    |
-| `-p, --path string`            | Specifies the path to your local template repository.                                     | `"."`                      |
 | `-v, --variables string`       | Specifies the path to a template variables file or raw YAML.                              | `".cloney-vars.yaml"`      |
 
 ## Example 1: Using Default Variables File
@@ -35,6 +34,14 @@ Run a dry-run with inline variable values:
 
 ```bash
 cloney dry-run -v '{ var1: value, var2: value }'
+```
+
+## Example 4: Dry-run from Local Path
+
+Run a dry-run on a template repository from a local path:
+
+```bash
+cloney dry-run ./path/to/my/template -v variables.yaml
 ```
 
 !!!info "Compatibility"
