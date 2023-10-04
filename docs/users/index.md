@@ -8,4 +8,10 @@ If you're looking to use existing Cloney Template Repositories created by others
     Learn how to provide custom variables when cloning a Cloney Template Repository, allowing you to customize templates to suit your project's needs.
 
     [:octicons-arrow-right-24: Providing Custom Variables](providing-custom-variables.md)
+
+-   __Modularizing Repositories__
+
+    Discover how to modularize your Git repositories with Cloney, enabling you to combine multiple template repositories into a single, well-structured directory.
+
+    [:octicons-arrow-right-24: Modularizing Repositories](modularizing-repositories.md)
 </div>

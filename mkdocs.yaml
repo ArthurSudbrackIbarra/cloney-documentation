@@ -42,6 +42,7 @@ nav:
   - User's Path:
       - users/index.md
       - Providing Custom Variables: users/providing-custom-variables.md
+      - Modularizing Repositories: users/modularizing-repositories.md
   - Creator's Path:
       - creators/index.md
       - The .cloney.yaml Metadata File: creators/cloney-metadata-file.md
