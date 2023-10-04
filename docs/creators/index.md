@@ -3,6 +3,12 @@
 Welcome to the world of Cloney template creation! If you're interested in crafting and customizing Cloney Template Repositories, you're in the right place. Here, you'll find a collection of resources to help you get started and become a proficient template creator. Explore the following sections to embark on your journey:
 
 <div class="grid cards" markdown>
+-   __Creating Your First Template Repository__
+
+    Learn how to create your very first Cloney Template Repository, allowing you to share project templates that others can clone and customize.
+
+    [:octicons-arrow-right-24: Creating Your First Template Repository](creating-your-first-template-repository.md)
+
 -   __The `.cloney.yaml` Metadata File__
 
     Learn how to define the structure and variables of your Cloney Template Repository using the `.cloney.yaml` metadata file.
