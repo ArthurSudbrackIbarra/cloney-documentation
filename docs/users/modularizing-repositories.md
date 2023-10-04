@@ -1,6 +1,6 @@
 # Cloney's Modularization: Building Your Project Block by Block
 
-Cloney offers a practical approach to modularizing your Git repositories, enabling you to create well-structured projects by joining multiple template repositories into a single, organized directory. This approach promotes efficient template reuse and effective project management. In this documentation, we'll explore how Cloney's modularization capabilities can simplify your workflow.
+Cloney offers a practical approach to modularizing your Git repositories, enabling you to create well-structured projects by joining multiple template repositories into a single, organized directory, just like LEGO blocks! This approach promotes efficient template reuse and effective project management. In this documentation, we'll explore how Cloney's modularization capabilities can simplify your workflow.
 
 ## The Modularization Workflow
 
@@ -21,16 +21,16 @@ Utilize the `clone` command to clone template repositories into your project dir
 
 ```bash
 # Clone a Java REST API template repository into the 'api' directory.
-cloney clone https://github.com/username/java-rest-api -o api
+cloney clone https://github.com/username/java-rest-api -v api-vars.yaml -o api
 
 # Clone a React frontend template repository into the 'frontend' directory.
-cloney clone https://gitlab.com/username/react-boilerplate -o frontend
+cloney clone https://gitlab.com/username/react-boilerplate -v front-vars.yaml -o frontend
 ```
 
 In this example, we've cloned a Java REST API template repository into the `api` directory and a React frontend template repository into the `frontend` directory. These template repositories are just fictitious examples, but you can use any template repositories you'd like.
 
 !!! note ""
-    When cloning repositories with Cloney, the `.git` folder from the cloned template repositories is not copied. This ensures that everything remains within a single repository, and you won't have multiple `.git` directories to manage.
+    When cloning repositories with Cloney, the hidden `.git` folder from the cloned template repositories is not included. This ensures that everything remains within a single repository, and you won't have multiple `.git` directories to manage.
 
 ### 3. Module Organization
 
