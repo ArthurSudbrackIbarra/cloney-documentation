@@ -44,18 +44,20 @@ After downloading Cloney, to make it accessible from the command line, you will 
     1. **Edit Your Shell Profile:** Depending on your shell (bash, zsh, etc.), open the appropriate shell profile configuration file.
 
         - For bash, you can edit the `.bashrc` file using a text editor like `nano` or `vim`:
-            ```
+
+            ```bash
             nano ~/.bashrc
             ```
 
         - For zsh, edit the `.zshrc` file:
-            ```
+
+            ```bash
             nano ~/.zshrc
             ```
 
     1. **Add Cloney to PATH:** Add the following line at the end of the file, replacing `/path/to/cloney` with the actual path to the directory where you extracted the Cloney executable file:
         
-        ```
+        ```bash
         export PATH="$PATH:/path/to/cloney"
         ```
 
@@ -63,9 +65,9 @@ After downloading Cloney, to make it accessible from the command line, you will 
 
     1. **Reload Your Shell:** To apply the changes, either restart your terminal or run the following command:
 
-        ```
+        ```bash
         source ~/.bashrc   # For bash users
-        source ~/.zshrc    # For zsh users (if using zsh)
+        source ~/.zshrc    # For zsh users
         ```
 
     1. **Verify Installation:** Open a new terminal window, type `cloney`, and press Enter. If you see Cloney's command-line interface information, you have successfully added it to your PATH.
