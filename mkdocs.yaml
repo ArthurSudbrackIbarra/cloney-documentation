@@ -88,11 +88,10 @@ markdown_extensions:
 
 plugins:
   - social:
-      cache: false
-      cards_layout_dir: layouts
-      cards_layout: my-custom-layout
+      cards_layout_options:
+        background_color: "#56c8cc" 
   - search
-  # - meta
+  # - meta - Sponsors only for now.
   
 extra_css:
   - stylesheets/extra.css
