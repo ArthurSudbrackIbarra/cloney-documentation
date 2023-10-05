@@ -10,7 +10,7 @@ To begin your Cloney journey, follow these steps to install the Cloney CLI on yo
 
 Refer to the table below to select the download button that matches your operating system and architecture:
 
-=== "Latest (0.1.1) <img class='twemoji lg middle' src='../../images/cloney-logo-no-text-rounded.png' style='margin-left: 5px'>"
+=== "Latest (0.1.1) <img class='twemoji lg middle' src='../images/cloney-logo-no-text-rounded.png' style='margin-left: 5px'>"
     --8<-- "partials/downloads/_0.1.1.md"
 
 ### Step 2: Unzip the Downloaded File and Add Cloney to Your System's PATH
