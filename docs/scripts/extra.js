@@ -50,5 +50,5 @@ if (isWindows() && isAMD64()) {
 
 // Apply the pulse effect to the matched download buttons
 for (const button of downloadButtons) {
-  button.innerHTML += "<br/>(Your System)";
+  button.innerHTML += "<br/><span style='color: #1e7275'>Your System</span>";
 }

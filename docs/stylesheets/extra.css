@@ -42,7 +42,7 @@ body[data-md-color-scheme="slate"] .md-typeset h3 {
 /* Define button hover color */
 .md-button:hover {
   background-color: var(--md-primary-fg-color--dark) !important;
-  border-color: var(--md-primary-fg-color--dark) !important;
+  border-color: transparent !important;
 }
 
 /* Change the admonition note border color to match the primary color and increase font size */
