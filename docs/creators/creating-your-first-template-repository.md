@@ -14,7 +14,7 @@ This command will guide you through the setup process, where you can specify det
 
 ## Step 2: Define Template Variables
 
-Within your template repository directory, you can define variables in a `.cloney.yaml` metadata file. These variables will be customizable by users who clone your template repository. Here's an example:
+Within your template repository directory, you can define variables in a [`.cloney.yaml`](cloney-metadata-file.md) metadata file. These variables will be customizable by users who clone your template repository. Here's an example:
 
 ```yaml title=".cloney.yaml"
 # Other metadata fields...
