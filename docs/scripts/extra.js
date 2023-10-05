@@ -50,5 +50,5 @@ if (isWindows() && isAMD64()) {
 
 // Apply the pulse effect to the matched download buttons
 for (const button of downloadButtons) {
-  button.classList.add("os-arch-selected");
+  button.innerHTML += "<br/>(Your System)";
 }

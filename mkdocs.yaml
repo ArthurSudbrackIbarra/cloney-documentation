@@ -20,8 +20,8 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  logo: images/cloney-logo-no-text.png
-  favicon: images/cloney-logo-no-text.png
+  logo: images/cloney-logo-no-text-rounded.png
+  favicon: images/cloney-logo-no-text-rounded.png
   language: en
   features:
     - content.code.copy

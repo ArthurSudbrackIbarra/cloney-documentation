@@ -71,9 +71,14 @@ footer.md-footer {
   background-color: var(--md-primary-fg-color--dark) !important;
 }
 
-/* Highlight the download button if the current OS and architecture matches the download button */
-.os-arch-selected {
-  border: 4px solid var(--md-primary-fg-color--dark) !important;
+/* Center text in the download buttons */
+a.download-windows-amd64,
+a.download-windows-arm64,
+a.download-linux-amd64,
+a.download-linux-arm64,
+a.download-macos-amd64
+a.download-macos-arm64 {
+  text-align: center;
 }
 
 /* Cards */

@@ -3,7 +3,7 @@
 Have you ever found yourself in the situation where you discover a fantastic template Git repository on GitHub, only to realize that it doesn't quite fit your unique project requirements? You're not alone. Traditional Git templates often leave you with the burden of customizing every detail manually, which can be time-consuming and error-prone. This is where Cloney comes to the rescue.
 
 <p align="center" style="margin: 1.5rem 0 0 0">
-  <img src="images/cloney-logo.png" style="width: 15rem; border-radius: 30px;">
+  <img src="images/cloney-logo-rounded.png" style="width: 15rem">
 </p>
 
 ## The Pain of Manual Adjustments
