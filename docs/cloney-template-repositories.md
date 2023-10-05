@@ -4,7 +4,7 @@ A Cloney Template Repository serves as the foundation for creating dynamic Git r
 
 ## What is a Cloney Template Repository?
 
-A Cloney Template Repository is a regular Git repository enriched with a special configuration file, `.cloney.yaml`, which defines the characteristics and variables of the template. This configuration file serves as the control center for your template, enabling dynamic content generation during the cloning process.
+A Cloney Template Repository is a regular Git repository enriched with a special configuration file, [`.cloney.yaml`](creators/cloney-metadata-file.md), which defines the characteristics and variables of the template. This configuration file serves as the control center for your template, enabling dynamic content generation during the cloning process.
 
 ### Key Components of a Cloney Template Repository
 
@@ -25,18 +25,6 @@ One of the primary strengths of Cloney Template Repositories is the ability to d
 ### Template Configuration
 
 The `.cloney.yaml` metadata file also allows you to configure some aspects of your template. These configurations are optional and can be omitted if you don't require them. For example, you can define paths to ignore when cloning the template, ensuring that specific files or directories are excluded from the customization process.
-
-### Creating Your Own Cloney Template Repository
-
-To create your Cloney Template Repository, follow these steps:
-
-1. Set up a Git repository for your project, including all the files and directories you want to include in your template.
-
-2. Create a `.cloney.yaml` file in the root of your repository. In this file, define the template's metadata, variables, and any optional configurations.
-
-3. Commit and push your changes to your Git repository.
-
-With these simple steps, you've transformed your standard Git repository into a Cloney Template Repository, ready to be customized and cloned by others.
 
 ## Discover Cloney Templates in Action
 

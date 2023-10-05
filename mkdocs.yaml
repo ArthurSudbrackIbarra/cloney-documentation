@@ -1,6 +1,9 @@
 site_name: Cloney Documentation
 site_description: Documentation for Cloney, the dynamic template generator for Git repositories.
-repo_url: https://github.com/ArthurSudbrackIbarra/cloney-documentation
+repo_name: ArthurSudbrackIbarra/cloney
+repo_url: https://github.com/ArthurSudbrackIbarra/cloney
+site_url: https://arthursudbrackibarra.github.io/cloney-documentation
+copyright: Copyright &copy; 2023 created by Arthur Sudbrack Ibarra
 
 theme:
   name: material
@@ -18,29 +21,50 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  logo: images/cloney-logo-no-text.png
-  favicon: images/cloney-logo-no-text.png
+  logo: images/cloney-logo-no-text-rounded.png
+  favicon: images/cloney-logo-no-text-rounded.png
   language: en
   features:
     - content.code.copy
     - search.suggest
     - search.highlight
-    - navigation.instant
+    - content.tabs.link
+    - navigation.footer
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - navigation.sections
 
 nav:
-  - Home: index.md
+  - Introduction: index.md
   - Getting Started: getting-started.md
-  - What Are Cloney Template Repositories?: cloney-template-repositories.md
+  - Cloney Template Repositories: cloney-template-repositories.md
   - User's Path:
-      - Using Someone Else's Template Repository: users/index.md
-      - Providing Custom Variables: users/providing-custom-variables.md
+      - users/index.md
+      - Cloning Your First Template Repository: users/cloning-your-first-template-repository.md
+      - Authentication and Private Repositories: users/authentication-and-private-repositories.md
+      - Modularizing Repositories: users/modularizing-repositories.md
   - Creator's Path:
-      - Create Your Own Template Repository: creators/index.md
+      - creators/index.md
+      - Creating Your First Template Repository: creators/creating-your-first-template-repository.md
       - The .cloney.yaml Metadata File: creators/cloney-metadata-file.md
       - Acessing Variables: creators/accessing-template-variables.md
       - Dynamic File Generation: creators/dynamic-file-generation.md
+      - Cloney Template Functions:
+          - creators/functions/index.md
+          - os: creators/functions/os.md
+          - arch: creators/functions/arch.md
       - Go Template Tutorials: creators/go-template-tutorials.md
-  - Cloney Command-Line Interface (CLI): cloney-cli.md
+  - Cloney Command-Line Interface (CLI):
+      - commands/index.md
+      - clone: commands/clone.md
+      - docs: commands/docs.md
+      - dry-run: commands/dry-run.md
+      - info: commands/info.md
+      - start: commands/start.md
+      - validate: commands/validate.md
+      - version: commands/version.md
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -51,23 +75,37 @@ markdown_extensions:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      base_path: ./docs
+      check_paths: false
   - pymdownx.superfences
   - admonition
   - pymdownx.details
   - attr_list
+  - md_in_html
+  - pymdownx.tabbed:
+      alternate_style: true
   - toc:
       permalink: true
 
 plugins:
+  - social:
+      cards_layout_options:
+        background_color: "#56c8cc" 
   - search
-
+  # - meta - Sponsors only for now.
+  
 extra_css:
   - stylesheets/extra.css
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/ua-parser-js/src/ua-parser.min.js
+  - scripts/extra.js
 
 extra:
   social:
-    - icon: fontawesome/brands/github-alt
+    - icon: fontawesome/brands/github
       link: https://github.com/ArthurSudbrackIbarra
-    - icon: fontawesome/brands/linkedin-in
+      name: My GitHub
+    - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/arthur-sudbrack-ibarra-88399423a/
+      name: My LinkedIn

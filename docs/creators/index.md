@@ -1,29 +1,41 @@
-# Create Your Own Cloney Template Repository
+# Creator's Path
 
 Welcome to the world of Cloney template creation! If you're interested in crafting and customizing Cloney Template Repositories, you're in the right place. Here, you'll find a collection of resources to help you get started and become a proficient template creator. Explore the following sections to embark on your journey:
 
-## The `.cloney.yaml` Metadata File
+<div class="grid cards" markdown>
+-   __Creating Your First Template Repository__
 
-Learn how to define the structure and variables of your Cloney Template Repository using the `.cloney.yaml` metadata file.
+    Learn how to create your very first Cloney Template Repository, allowing you to share project templates that others can clone and customize.
 
-[Explore the Metadata File](cloney-metadata-file.md)
+    [:octicons-arrow-right-24: Creating Your First Template Repository](creating-your-first-template-repository.md)
 
-## Accessing Template Variables
+-   __The `.cloney.yaml` Metadata File__
 
-Discover how to access and utilize template variables, allowing you to create dynamic and adaptable templates.
+    Learn how to define the structure and variables of your Cloney Template Repository using the `.cloney.yaml` metadata file.
 
-[Explore Accessing Template Variables](accessing-template-variables.md)
+    [:octicons-arrow-right-24: The Metadata File](cloney-metadata-file.md)
 
-## Dynamic File Generation
+-   __Accessing Template Variables__
 
-Explore the intricacies of dynamic file generation within Cloney templates, enabling you to generate files and directories based on user-provided variables.
+    Discover how to access and utilize template variables, allowing you to create dynamic and adaptable templates.
 
-[Explore Dynamic File Generation](dynamic-file-generation.md)
+    [:octicons-arrow-right-24: Accessing Template Variables](accessing-template-variables.md)
 
-## Go Template Tutorials
+-   __Dynamic File Generation__
 
-Get acquainted with Go templates and their powerful syntax. These tutorials provide insights into using Go templates effectively in your Cloney Template Repository.
+    Explore the intricacies of dynamic file generation within Cloney templates, enabling you to generate files and directories based on user-provided variables.
 
-[Explore Go Template Tutorials](go-template-tutorials.md)
+    [:octicons-arrow-right-24: Dynamic File Generation](dynamic-file-generation.md)
 
-Embark on your journey to becoming a Cloney template creator and empower others to generate projects based on your templates.
+-   __Cloney Template Functions__
+
+    Learn how to use Cloney custom template functions to maximize your template customization capabilities.
+
+    [:octicons-arrow-right-24: Cloney Template Functions](functions/index.md)
+
+-   __Go Template Tutorials__
+
+    Get acquainted with Go templates and their powerful syntax. These tutorials provide insights into using Go templates effectively in your Cloney Template Repository.
+
+    [:octicons-arrow-right-24: Go Template Tutorials](go-template-tutorials.md)
+</div>

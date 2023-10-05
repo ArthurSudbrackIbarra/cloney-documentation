@@ -14,7 +14,7 @@ Imagine you're working with a Cloney Template Repository for a billing system. I
 
 Here's a snippet from your template HTML file, `index.html`:
 
-```html
+```html title="index.html" hl_lines="4 7-9 12-14"
 <!-- File: index.html -->
 
 <h1>
@@ -49,7 +49,7 @@ When you use Cloney to create your template based on user input, it automaticall
 
 Here's an example of what the generated HTML could look like:
 
-```html
+```html title="index.html"
 <!-- File: index.html -->
 
 <h1>MyApp is a fantastic app that supports the following currencies:</h1>
