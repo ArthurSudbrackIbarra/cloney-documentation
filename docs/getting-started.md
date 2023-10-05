@@ -17,7 +17,7 @@ Refer to the table below to select the download button that matches your operati
 
 After downloading Cloney, to make it accessible from the command line, you will need to unzip the downloaded file and then add the Cloney executable to your system's PATH. The process for adding Cloney to your PATH varies depending on your operating system:
 
-=== "Windows"
+=== "Windows :fontawesome-brands-windows:"
 
     1. **Unzip the Downloaded File:** Locate the downloaded Cloney zip file and right-click on it. Select "Extract All" from the context menu and follow the prompts to unzip the file.
 
@@ -33,12 +33,12 @@ After downloading Cloney, to make it accessible from the command line, you will 
 
     7. **Verify Installation:** Open a new command prompt window, type `cloney`, and press Enter. If you see Cloney's command-line interface information, you have successfully added it to your PATH.
 
-=== "Linux and macOS"
+=== "Linux and macOS :material-linux: :simple-apple:"
 
     1. **Unzip the Downloaded File:** Open a terminal window, navigate to the directory where you downloaded Cloney, and use the `unzip` command to extract the contents of the downloaded zip file.
 
         ```bash
-        unzip cloney-linux-amd64.zip # Change the filename as needed
+        unzip cloney-linux-amd64.zip # Change the filename as needed.
         ```
 
     1. **Edit Your Shell Profile:** Depending on your shell (bash, zsh, etc.), open the appropriate shell profile configuration file.
@@ -66,8 +66,8 @@ After downloading Cloney, to make it accessible from the command line, you will 
     1. **Reload Your Shell:** To apply the changes, either restart your terminal or run the following command:
 
         ```bash
-        source ~/.bashrc   # For bash users
-        source ~/.zshrc    # For zsh users
+        source ~/.bashrc   # For bash users.
+        source ~/.zshrc    # For zsh users.
         ```
 
     1. **Verify Installation:** Open a new terminal window, type `cloney`, and press Enter. If you see Cloney's command-line interface information, you have successfully added it to your PATH.
