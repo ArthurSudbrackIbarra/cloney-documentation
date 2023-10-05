@@ -14,11 +14,11 @@ This process can be both frustrating and error-prone. Manually searching and rep
 
 ## Introducing Cloney Template Repositories
 
-Cloney Template Repositories are the heart of Cloney's innovative approach. These repositories are enriched with a special `.cloney.yaml` metadata file that contains information about the template repository. This metadata file defines variables and configurations, making the template adaptable to various use cases.
+[Cloney Template Repositories](cloney-template-repositories.md) are the heart of Cloney's innovative approach. These repositories are enriched with a special `.cloney.yaml` metadata file that contains information about the template repository. This metadata file defines variables and configurations, making the template adaptable to various use cases.
 
 With Cloney, you no longer need to manually tweak code, search for placeholders, or worry about consistency. Instead, you can:
 
-- Define variables within the `.cloney.yaml` file, allowing you to customize different aspects of the template, such as project names, descriptions, and more.
+- Define variables within the [`.cloney.yaml`](creators/cloney-metadata-file.md) file, allowing you to customize different aspects of the template, such as project names, descriptions, and more.
 
 - Use Go templates, a powerful and flexible templating language, to dynamically generate files and directories based on your provided variables.
 

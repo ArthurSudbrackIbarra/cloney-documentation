@@ -17,7 +17,7 @@ cd my-project
 
 ### 2. Clone Template Repositories
 
-Utilize the `clone` command to clone template repositories into your project directory. For instance, let's say you need both a backend and a frontend for your project:
+Utilize the [`clone`](../commands/clone.md) command to clone template repositories into your project directory. For instance, let's say you need both a backend and a frontend for your project:
 
 ```bash
 # Clone a Java REST API template repository into the 'api' directory.

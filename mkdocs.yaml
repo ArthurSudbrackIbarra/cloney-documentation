@@ -2,8 +2,8 @@ site_name: Cloney Documentation
 site_description: Documentation for Cloney, the dynamic template generator for Git repositories.
 repo_name: ArthurSudbrackIbarra/cloney
 repo_url: https://github.com/ArthurSudbrackIbarra/cloney
-site_url: https://arthursudbrackibarra.github.io/cloney-documentation/
-copyright: Copyright &copy; 2023 Arthur Sudbrack Ibarra
+site_url: https://arthursudbrackibarra.github.io/cloney-documentation
+copyright: Copyright &copy; 2023 created by Arthur Sudbrack Ibarra
 
 theme:
   name: material
@@ -105,5 +105,7 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/ArthurSudbrackIbarra
+      name: My GitHub
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/arthur-sudbrack-ibarra-88399423a/
+      name: My LinkedIn

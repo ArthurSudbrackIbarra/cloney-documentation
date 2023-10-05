@@ -8,7 +8,7 @@ Start by selecting a Cloney template repository that matches your project requir
 
 ## Step 2: Create a YAML Variables File
 
-If the Cloney template repository you've chosen includes variables that you'd like to customize, you can create a YAML variables file. This file allows you to define custom values for variables specified in the template repository's `.cloney.yaml` metadata file. Here's an example:
+If the Cloney template repository you've chosen includes variables that you'd like to customize, you can create a YAML variables file. This file allows you to define custom values for variables specified in the template repository's [`.cloney.yaml`](../creators/cloney-metadata-file.md) metadata file. Here's an example:
 
 ```yaml title=".cloney-vars.yaml"
 app_name: My App
