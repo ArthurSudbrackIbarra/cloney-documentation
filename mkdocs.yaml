@@ -43,6 +43,7 @@ nav:
   - User's Path:
       - users/index.md
       - Cloning Your First Template Repository: users/cloning-your-first-template-repository.md
+      - Authentication and Private Repositories: users/authentication-and-private-repositories.md
       - Modularizing Repositories: users/modularizing-repositories.md
   - Creator's Path:
       - creators/index.md

@@ -9,6 +9,12 @@ If you're looking to use existing Cloney Template Repositories created by others
 
     [:octicons-arrow-right-24: Cloning Your First Template Repository](cloning-your-first-template-repository.md)
 
+-   __Authentication and Private Repositories__
+    
+    Discover how to work with private Git using Cloney.
+    
+    [:octicons-arrow-right-24: Authentication and Private Repositories](authentication-and-private-repositories.md)
+
 -   __Modularizing Repositories__
 
     Discover how to modularize your Git repositories with Cloney, enabling you to combine multiple template repositories into a single, well-structured directory.
