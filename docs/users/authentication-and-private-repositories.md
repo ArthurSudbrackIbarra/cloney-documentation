@@ -6,7 +6,7 @@ When working with private Git repositories in Cloney, you have three available a
 
     ## Cloning the Private Repository and Using `cloney dry-run`
 
-    The recommended and more secure approach is to clone the private repository manually using Git and then use the `dry-run` command to apply Cloney's customizations without the need for explicit token authentication. This method is the recommended and secure way to work with private Git repositories in Cloney, as it leverages your existing access to the repository through Git.
+    The recommended and more secure approach is to clone the private repository manually using Git and then use the [`dry-run`](../commands/dry-run.md) command to apply Cloney's customizations without the need for explicit token authentication. This method is the recommended and secure way to work with private Git repositories in Cloney, as it leverages your existing access to the repository through Git.
 
     1. Clone the private repository using Git:
 

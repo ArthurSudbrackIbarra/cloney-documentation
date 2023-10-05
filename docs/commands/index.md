@@ -7,6 +7,7 @@ The Cloney Command-Line Interface (CLI) is the tool you use to interact with Clo
 Here is a list of the available commands in the Cloney CLI:
 
 - [`clone`](clone.md): Clone a Cloney template repository.
+- [`docs`](docs.md): Open the Cloney documentation in your browser.
 - [`dry-run`](dry-run.md): Run a template repository in dry-run mode for testing.
 - [`info`](info.md): Display information about a Cloney template repository.
 - [`start`](start.md): Start a Cloney template repository.

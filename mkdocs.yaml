@@ -59,6 +59,7 @@ nav:
   - Cloney Command-Line Interface (CLI):
       - commands/index.md
       - clone: commands/clone.md
+      - docs: commands/docs.md
       - dry-run: commands/dry-run.md
       - info: commands/info.md
       - start: commands/start.md
