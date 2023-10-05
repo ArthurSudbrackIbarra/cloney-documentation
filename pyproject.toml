@@ -8,7 +8,7 @@ authors = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
-mkdocs-material = "9.4.2"
+mkdocs-material = {extras = ["imaging"], version = "^9.4.3"}
 
 [build-system]
 requires = ["poetry-core"]
