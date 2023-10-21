@@ -50,11 +50,14 @@ nav:
       - Creating Your First Template Repository: creators/creating-your-first-template-repository.md
       - The .cloney.yaml Metadata File: creators/cloney-metadata-file.md
       - Acessing Variables: creators/accessing-template-variables.md
+      - Reusable Blocks: creators/reusable-blocks.md
       - Dynamic File Generation: creators/dynamic-file-generation.md
       - Cloney Template Functions:
           - creators/functions/index.md
-          - os: creators/functions/os.md
           - arch: creators/functions/arch.md
+          - joinDoubleQuote: creators/functions/joinDoubleQuote.md
+          - joinSingleQuote: creators/functions/joinSingleQuote.md
+          - os: creators/functions/os.md
       - Go Template Tutorials: creators/go-template-tutorials.md
   - Cloney Command-Line Interface (CLI):
       - commands/index.md

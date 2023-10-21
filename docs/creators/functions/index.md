@@ -16,5 +16,7 @@ Here is a list of some of the Cloney Template Functions available for your use:
 
 - [`os`](os.md): Returns the user's operating system.
 - [`arch`](arch.md): Returns the user's operating system architecture.
+- [`joinSingleQuote`](joinSingleQuote.md): Joins the elements of a list with a specified separator and encloses them in single quotes.
+- [`joinDoubleQuote`](joinDoubleQuote.md): Joins the elements of a list with a specified separator and encloses them in double quotes.
 
 Explore each function's documentation to understand its purpose and how to use it effectively in your templates.

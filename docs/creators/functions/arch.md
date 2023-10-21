@@ -1,6 +1,6 @@
 # `arch` Function
 
-The `arch` function provided by Cloney returns the user's operating system architecture.
+The `arch` function returns the user's operating system architecture.
 
 ## Description
 
@@ -35,4 +35,4 @@ To start the 'abc' service, run the following command:
 ```
 
 !!!info "Compatibility"
-    This function is available in Cloney 0.1.0 and later.
+    This function is available in Cloney `0.1.0` and later.
