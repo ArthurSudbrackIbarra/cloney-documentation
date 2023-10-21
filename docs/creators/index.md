@@ -21,6 +21,12 @@ Welcome to the world of Cloney template creation! If you're interested in crafti
 
     [:octicons-arrow-right-24: Accessing Template Variables](accessing-template-variables.md)
 
+-   __Reusable Blocks__
+
+    Learn how to create reusable blocks of content that can be easily integrated into multiple template files.
+
+    [:octicons-arrow-right-24: Reusable Blocks](reusable-blocks.md)
+
 -   __Dynamic File Generation__
 
     Explore the intricacies of dynamic file generation within Cloney templates, enabling you to generate files and directories based on user-provided variables.

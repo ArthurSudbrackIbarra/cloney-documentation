@@ -45,7 +45,7 @@ cloney dry-run ./path/to/my/template -v variables.yaml
 
 ## Example 5: Hot Reload Mode
 
-Run a dry-run on a template repository from a local path with hot reload mode enabled. This mode will watch for changes in the template repository and automatically re-run the dry-run command for you:
+Run a dry-run on a template repository with hot reload mode enabled. This mode will watch for changes in the template repository and automatically re-run the `dry-run` command for you:
 
 
 ```bash

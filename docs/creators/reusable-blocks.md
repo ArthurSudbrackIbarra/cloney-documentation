@@ -1,6 +1,6 @@
 # Reusable Blocks
 
-In Cloney template repositories, you can create reusable blocks of content using the `define` block. These named templates allow you to define specific content that can be easily integrated into your template files.
+In Cloney template repositories, you can create reusable blocks of content using the `define` block. These named templates allow you to define specific content that can be easily integrated into multiple template files. This enables you to create components that can be reused throughout your Cloney template repository.
 
 ## What are Reusable Blocks?
 
