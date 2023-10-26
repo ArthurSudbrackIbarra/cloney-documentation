@@ -1,9 +1,10 @@
-/* Define primary color variables */
+/* Define root variables */
 :root {
   --md-primary-fg-color: #56c8cc;
   --md-primary-fg-color--light: #5fd7db;
   --md-primary-fg-color--dark: #43adb1;
-  --md-footer-bg-color: #43adb1; /* Define footer background color */
+
+  --md-footer-bg-color: #43adb1;
 }
 
 /* Make headers bold */
@@ -39,8 +40,9 @@ body[data-md-color-scheme="slate"] .md-typeset h3 {
   color: var(--md-primary-fg-color--dark) !important;
 }
 
-/* Define button hover color */
-.md-button:hover {
+/* Define button hover and focus color */
+.md-button:hover
+.md-button:focus {
   background-color: var(--md-primary-fg-color--dark) !important;
   border-color: transparent !important;
 }
