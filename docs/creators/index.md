@@ -43,5 +43,5 @@ Welcome to the world of Cloney template creation! If you're interested in crafti
 
     Get acquainted with Go templates and their powerful syntax. These tutorials provide insights into using Go templates effectively in your Cloney Template Repository.
 
-    [:octicons-arrow-right-24: Go Template Tutorials](go-template-tutorials.md)
+    [:octicons-arrow-right-24: Go Template Tutorials](go-template-tutorials/index.md)
 </div>

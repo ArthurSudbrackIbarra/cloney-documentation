@@ -1,4 +1,4 @@
-# Go Templates: Creating Variables
+# Go Templates: Variables
 
 In Cloney template repositories, you can create and use variables within your templates to store and manipulate data. These variables are specific to your template and can help you make your templates more dynamic.
 

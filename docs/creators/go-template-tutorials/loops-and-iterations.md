@@ -23,7 +23,7 @@ To use the `range` construct for iteration, follow these steps:
 
       ```plaintext
       {{ range .myCollection }}
-         {{ . }}
+         Item: {{ . }}
       {{ end }}
       ```
 
@@ -63,6 +63,5 @@ In this example, we're iterating through a map named `data` and displaying its k
 
 ## Important Considerations
 
-- Variables defined within a `range` block are only accessible within that block. If you need to use the variable outside the `range` block, make sure to define it in a broader scope.
 - The `$index` and `$element` variables are optional. You can choose different variable names for more descriptive context.
 - To loop through a map, Cloney preserves the order in which key-value pairs were defined.

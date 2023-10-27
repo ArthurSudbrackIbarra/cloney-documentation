@@ -58,7 +58,15 @@ nav:
           - joinDoubleQuote: creators/functions/joinDoubleQuote.md
           - joinSingleQuote: creators/functions/joinSingleQuote.md
           - os: creators/functions/os.md
-      - Go Template Tutorials: creators/go-template-tutorials.md
+      - Go Template Tutorials:
+        - creators/go-template-tutorials/index.md
+        - Variables: creators/go-template-tutorials/variables.md
+        - Contexts: creators/go-template-tutorials/contexts.md
+        - Conditional Statements: creators/go-template-tutorials/conditional-statements.md
+        - Loops and Iterations: creators/go-template-tutorials/loops-and-iterations.md
+        - Functions: creators/go-template-tutorials/functions.md
+        - Hyphens: creators/go-template-tutorials/hyphens.md
+
   - Cloney Command-Line Interface (CLI):
       - commands/index.md
       - clone: commands/clone.md

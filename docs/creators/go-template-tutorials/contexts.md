@@ -12,14 +12,11 @@ Local contexts are specific to a block or construct within your template. When y
 
 ## Accessing Variables
 
-In Go templates, you can access variables within the current context using the `.` (dot) notation. To navigate to the root context, you can use the `$` (dollar sign) symbol.
-
-## Example 1: Variable Access
-
-Here's an example of how variable access works in Go templates:
+In Go templates, you can access variables within the current context using the `.` (dot) notation. To navigate to the root context, you can use the `$` (dollar sign) symbol. Here's an example of how variable access works in Go templates:
 
 ```plaintext
 Root-level variable: {{ .app_name }}
+
 {{ range .items }}
     Local variable: {{ .name }}
     Accessing root variable within local context: {{ $.app_name }}
@@ -28,4 +25,4 @@ Root-level variable: {{ .app_name }}
 
 In this example, `app_name` is a root-level variable, and `name` is a local variable. We use `.` to access the local variable and `$.app_name` to access the root-level variable from within a local context.
 
-> Note: In a `define` structure, the root context's variables, such as `$.app_name`, are not accessible. That's because the `define` structure creates a new local context.
+> Note: In a [`define`](../reusable-blocks.md) structure, the root context's variables, such as `$.app_name`, are not accessible. That's because the `define` structure creates a new local context.

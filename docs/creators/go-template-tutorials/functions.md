@@ -18,6 +18,8 @@ To use functions in Go templates, follow these steps:
 
 ## Examples: Utilizing Functions
 
+Here are some examples of how you can use functions in your Cloney templates:
+
 ### Uppercase Function
 
 You can use the `upper` function to convert text to uppercase:

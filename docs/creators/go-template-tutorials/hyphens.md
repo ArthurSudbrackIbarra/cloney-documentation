@@ -18,7 +18,7 @@ Hello,
 **Output**:
 
 ```plaintext
-Hello, This will have no leading whitespace.
+Hello, this will have no leading whitespace.
 ```
 
 In this example, the use of leading hyphens ensures that the text immediately follows the opening curly brace without any leading whitespace.
@@ -57,7 +57,7 @@ Goodbye!
 **Output**:
 
 ```plaintext
-Hello, This will have no trailing whitespace. Goodbye!
+Hello, this will have no trailing whitespace. Goodbye!
 ```
 
 With both leading and trailing hyphens, the content is rendered without any unnecessary whitespace.

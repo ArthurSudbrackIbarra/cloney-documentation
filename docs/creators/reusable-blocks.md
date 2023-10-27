@@ -1,6 +1,6 @@
 # Reusable Blocks
 
-In Cloney template repositories, you can create reusable blocks of content using the `define` function. These named templates allow you to define specific content that can be easily integrated into multiple template files. This enables you to create components that can be reused throughout your Cloney template repository.
+In Cloney template repositories, you can create reusable blocks of content using the `define` structure. These named templates allow you to define specific content that can be easily integrated into multiple template files. This enables you to create components that can be reused throughout your Cloney template repository.
 
 These blocks are global in scope, which means they are accessible from any file in any directory within your Cloney template repository. Therefore, it's essential to choose **unique block names** to avoid conflicts.
 
@@ -10,9 +10,9 @@ To create a reusable block in a Cloney template repository, follow these steps:
 
 1. **Open a Template File**: Begin by opening a template file where you want to define your reusable block.
 
-2. **Define the Block**: Inside the template file, use the `define` function to define your reusable block.
+2. **Define the Block**: Inside the template file, use the `define` structure to define your reusable block.
 
-3. **Add Block Content**: Inside the `define` function, add the content you want to include in the reusable block.
+3. **Add Block Content**: Inside the `define` structure, add the content you want to include in the reusable block.
 
 Here's an example of creating a simple reusable block named `"greeting"`:
 
@@ -40,7 +40,7 @@ Here's an example of using the `"greeting"` reusable block we defined earlier in
 
 In this example, we're referencing the `"greeting"` reusable block and passing the value of an arbitrary variable called `name` as an argument to the block. This enables us to customize the content of the `"greeting"` block based on the specific value provided when it's used.
 
-It's essential to pass the necessary data to your reusable blocks via the context to ensure that you can access and use them effectively within the `define` functions. The context passed to a `define` function defines the scope of data and variables that can be accessed within the block, and each function has its own scope.
+It's essential to pass the necessary data to your reusable blocks via the context to ensure that you can access and use them effectively within the `define` structures. The context passed to a `define` structure defines the scope of data and variables that can be accessed within the block, and each structure has its own scope.
 
 ### The `include` Function
 

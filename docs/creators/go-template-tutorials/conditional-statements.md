@@ -24,9 +24,9 @@ To use conditional statements in Go templates, follow these steps:
 
 1. **Execute Actions**: Within the `if` and `else` blocks, you can execute actions or access data depending on the condition.
 
-## Example 1: Using an `if` Statement
+## The `if` and `else` Statements
 
-Here's an example of using an `if` statement to check if a variable equals a specific value:
+Here's an example of using the `if` and `else` statements to check if a variable equals a specific value:
 
 ```plaintext
 {{ if eq .status "active" }}
@@ -56,7 +56,7 @@ In this example, we're checking the `status` variable and providing different re
 
 ## Multiple Conditions
 
-You can also use multiple conditions by nesting `if` and `else if` statements or combining conditions using `or` and `and` operators.
+You can also use multiple conditions by combining conditions using `or` and `and` operators, for example.
 
 Here's an example of combining conditions using the `or` operator:
 
