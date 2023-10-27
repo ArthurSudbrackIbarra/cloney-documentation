@@ -22,7 +22,7 @@ Hello, {{ . }}!
 {{ end }}
 ```
 
-In this example, we've defined a reusable block named `"greeting"` that includes a greeting message to be displayed. The `{{ . }}` placeholder is a reference to the current context, which allows you to insert dynamic values when the block is used. In this case, `{{ . }}` represents the value passed to the block when it's referenced.
+In this example, we've defined a reusable block named `"greeting"` that includes a greeting message to be displayed. The `{{ . }}` placeholder is a reference to the current [context](./go-template-tutorials/contexts.md), which allows you to insert dynamic values when the block is used. In this case, `{{ . }}` represents the value passed to the block when it's referenced.
 
 ## Using Reusable Blocks
 
