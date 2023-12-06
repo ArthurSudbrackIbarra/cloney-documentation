@@ -40,7 +40,7 @@ Suppose you need to include a license header in every file of your cloned projec
 ```plaintext title="__license-header.txt" hl_lines="1-4"
 {{- define "license-header" -}}
 This is a license header.
-Copyright 2020.
+Copyright 2024.
 {{- end -}}
 ```
 
