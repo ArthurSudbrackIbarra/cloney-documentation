@@ -51,3 +51,7 @@ Here's an example of using the `include` function to include a block named `"my-
 ```plaintext title="hello-3.txt"
 {{ include "my-block-name" . | nindent 4 | upper }}
 ```
+
+## Combining Reusable Blocks with Ghost Files
+
+Ghost files in Cloney template repositories, identified by names starting with double underscores (`__`), play a complementary role when used in conjunction with reusable blocks. This combination enhances the modularity and maintainability of your templates. Check out the [Ghost Files](ghost-files.md) page to learn more.

@@ -27,6 +27,12 @@ Welcome to the world of Cloney template creation! If you're interested in crafti
 
     [:octicons-arrow-right-24: Reusable Blocks](reusable-blocks.md)
 
+-   __Ghost Files__
+    
+    Understand how to use ghost files to organize, share, and reuse template logic without affecting the final output of the cloned project.
+
+    [:octicons-arrow-right-24: Ghost Files](ghost-files.md)
+
 -   __Dynamic File Generation__
 
     Explore the intricacies of dynamic file generation within Cloney templates, enabling you to generate files and directories based on user-provided variables.

@@ -1,6 +1,6 @@
 # Accessing Template Variables
 
-Cloney makes it effortless to access and utilize variables within your template files. It employs the Go template syntax, a powerful and flexible language for generating text and code. It's essential to note that you **don't require any knowledge of Go programming** to utilize Cloney effectively. The term "Go template" is simply a historical reference to the language where these templates initially emerged.
+Cloney makes it effortless to access and utilize variables within your template files. It employs the Go template syntax, a powerful and flexible language for generating text and code. It's essential to note that you **don't require any knowledge of Go programming** to utilize Cloney effectively.
 
 To access and use variables within your template files, follow these steps:
 

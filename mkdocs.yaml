@@ -51,6 +51,7 @@ nav:
       - The .cloney.yaml Metadata File: creators/cloney-metadata-file.md
       - Acessing Variables: creators/accessing-template-variables.md
       - Reusable Blocks: creators/reusable-blocks.md
+      - Ghost Files: creators/ghost-files.md
       - Dynamic File Generation: creators/dynamic-file-generation.md
       - Cloney Template Functions:
           - creators/functions/index.md
