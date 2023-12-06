@@ -14,7 +14,7 @@ To use functions in Go templates, follow these steps:
     {{ function-name argument1 argument2 ... }}
     ```
 
-3. **Provide Arguments**: Fill in the function's arguments with the necessary values or variables.
+1. **Provide Arguments**: Fill in the function's arguments with the necessary values or variables.
 
 ## Examples: Utilizing Functions
 

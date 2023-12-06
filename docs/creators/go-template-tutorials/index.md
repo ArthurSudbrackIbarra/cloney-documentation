@@ -29,4 +29,3 @@ Enhance your template's functionality with built-in Go template functions. Perfo
 ## Hyphens
 
 Discover how to control whitespace and formatting within your templates using hyphens (`-`). By using leading and trailing hyphens, you can achieve precise rendering. Learn more in the [Hyphens tutorial](./hyphens.md).
-
