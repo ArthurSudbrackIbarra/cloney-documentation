@@ -75,7 +75,7 @@ Let's break down what's happening within this template:
 
 !!! note ""
 
-    `{{- toFile $fileName "currency-file-content" . }}`: This generates a file named `fileName` using the `currency-file-content` template and the current currency as the context. This is where the dynamic file generation happens.
+    `{{- toFile $fileName "currency-file-content" . }}`: This generates a file named `fileName` using the `currency-file-content` template and the current currency as the [context](./go-template-tutorials/contexts.md). This is where the dynamic file generation happens.
 
 
 ### Generated Output

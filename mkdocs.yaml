@@ -50,12 +50,24 @@ nav:
       - Creating Your First Template Repository: creators/creating-your-first-template-repository.md
       - The .cloney.yaml Metadata File: creators/cloney-metadata-file.md
       - Acessing Variables: creators/accessing-template-variables.md
+      - Reusable Blocks: creators/reusable-blocks.md
+      - Ghost Files: creators/ghost-files.md
       - Dynamic File Generation: creators/dynamic-file-generation.md
       - Cloney Template Functions:
           - creators/functions/index.md
-          - os: creators/functions/os.md
           - arch: creators/functions/arch.md
-      - Go Template Tutorials: creators/go-template-tutorials.md
+          - joinDoubleQuote: creators/functions/joinDoubleQuote.md
+          - joinSingleQuote: creators/functions/joinSingleQuote.md
+          - os: creators/functions/os.md
+      - Go Template Tutorials:
+        - creators/go-template-tutorials/index.md
+        - Variables: creators/go-template-tutorials/variables.md
+        - Contexts: creators/go-template-tutorials/contexts.md
+        - Conditional Statements: creators/go-template-tutorials/conditional-statements.md
+        - Loops and Iterations: creators/go-template-tutorials/loops-and-iterations.md
+        - Functions: creators/go-template-tutorials/functions.md
+        - Hyphens: creators/go-template-tutorials/hyphens.md
+
   - Cloney Command-Line Interface (CLI):
       - commands/index.md
       - clone: commands/clone.md

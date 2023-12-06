@@ -1,6 +1,6 @@
 # `os` Function
 
-The `os` function provided by Cloney returns the user's operating system.
+The `os` function returns the user's operating system.
 
 ## Description
 
@@ -33,4 +33,4 @@ To start the 'abc' service, run the following command:
 ```
 
 !!!info "Compatibility"
-    This function is available in Cloney 0.1.0 and later.
+    This function is available in Cloney `0.1.0` and later.

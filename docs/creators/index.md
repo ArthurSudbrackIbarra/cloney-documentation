@@ -21,6 +21,18 @@ Welcome to the world of Cloney template creation! If you're interested in crafti
 
     [:octicons-arrow-right-24: Accessing Template Variables](accessing-template-variables.md)
 
+-   __Reusable Blocks__
+
+    Learn how to create reusable blocks of content that can be easily integrated into multiple template files.
+
+    [:octicons-arrow-right-24: Reusable Blocks](reusable-blocks.md)
+
+-   __Ghost Files__
+    
+    Understand how to use ghost files to organize, share, and reuse template logic without affecting the final output of the cloned project.
+
+    [:octicons-arrow-right-24: Ghost Files](ghost-files.md)
+
 -   __Dynamic File Generation__
 
     Explore the intricacies of dynamic file generation within Cloney templates, enabling you to generate files and directories based on user-provided variables.
@@ -37,5 +49,5 @@ Welcome to the world of Cloney template creation! If you're interested in crafti
 
     Get acquainted with Go templates and their powerful syntax. These tutorials provide insights into using Go templates effectively in your Cloney Template Repository.
 
-    [:octicons-arrow-right-24: Go Template Tutorials](go-template-tutorials.md)
+    [:octicons-arrow-right-24: Go Template Tutorials](go-template-tutorials/index.md)
 </div>

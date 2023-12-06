@@ -4,75 +4,47 @@ Whether you want to use existing Cloney templates or create your own, the first 
 
 ## Installing Cloney
 
-To begin your Cloney journey, follow these steps to install the Cloney CLI on your system. You can install Cloney on Windows, Linux, or macOS and choose the appropriate architecture for your machine.
-
-### Step 1: Choose Your Operating System and Architecture
-
-Refer to the table below to select the download button that matches your operating system and architecture:
-
-=== "0.2.0 (Latest) <img class='twemoji lg middle' src='../images/cloney-logo-no-text-rounded.png' style='margin-left: 5px'>"
-    --8<-- "partials/downloads/_0.2.0.md"
-
-### Step 2: Unzip the Downloaded File and Add Cloney to Your System's PATH
-
-After downloading Cloney, to make it accessible from the command line, you will need to unzip the downloaded file and then add the Cloney executable to your system's PATH. The process for adding Cloney to your PATH varies depending on your operating system:
+To begin your Cloney journey, follow these steps to install the Cloney CLI on your system. You can install Cloney on Windows, Linux, or macOS.
 
 === "Windows :fontawesome-brands-windows:"
+    ### Step 1: Download the Cloney Executable for Windows
+
+    Refer to the table below to choose the download button corresponding to your operating system's architecture:
+
+    === "1.0.0 (Latest) <img class='twemoji lg middle' src='../images/cloney-logo-no-text-rounded.png' style='margin-left: 5px'>"
+        --8<-- "partials/downloads/windows/_1.0.0.md"
+
+    ### Step 2: Unzip the Downloaded File and Add Cloney to Your System's PATH
+
+    After downloading Cloney, to make it accessible from the command line, you will need to unzip the downloaded file and then add the Cloney executable to your system's PATH:
 
     1. **Unzip the Downloaded File:** Locate the downloaded Cloney zip file and right-click on it. Select "Extract All" from the context menu and follow the prompts to unzip the file.
 
-    2. **Open the Start Menu:** Click on the Windows icon in the taskbar to open the Start Menu.
+    1. **Open the Start Menu:** Click on the Windows icon in the taskbar to open the Start Menu.
 
-    3. **Search for "Environment Variables":** In the search bar, type "Environment Variables" and select "Edit the system environment variables" from the results.
+    1. **Search for "Environment Variables":** In the search bar, type "Environment Variables" and select "Edit the system environment variables" from the results.
 
-    4. **Open the Environment Variables:** In the System Properties window, click the "Environment Variables" button near the bottom right.
+    1. **Open the Environment Variables:** In the System Properties window, click the "Environment Variables" button near the bottom right.
 
-    5. **Edit the PATH Variable:** In the Environment Variables window, under the "System variables" section, find the "Path" variable and click "Edit."
+    1. **Edit the PATH Variable:** In the Environment Variables window, under the "System variables" section, find the "Path" variable and click "Edit."
 
-    6. **Add Cloney to PATH:** Click "New" and then enter the path to the directory where you extracted the Cloney executable file. For example, if you extracted it to `C:\Program Files\Cloney`, add that path. Click "OK" to save your changes.
+    1. **Add Cloney to PATH:** Click "New" and then enter the path to the directory where you extracted the Cloney executable file. For example, if you extracted it to `C:\Program Files\Cloney`, add that path. Click "OK" to save your changes.
 
-    7. **Verify Installation:** Open a new command prompt window, type `cloney`, and press Enter. If you see Cloney's command-line interface information, you have successfully added it to your PATH.
+    1. **Verify Installation:** Open a new command prompt window, type `cloney`, and press Enter. If you see Cloney's command-line interface information, you have successfully added it to your PATH.
+
+    That's it! Now, you've successfully unzipped the downloaded file and added Cloney to your system's PATH, allowing you to use it from the command line.
 
 === "Linux and macOS :material-linux: :simple-apple:"
+    ### Step 1: Download the Cloney Executable for Linux or macOS
 
-    1. **Unzip the Downloaded File:** Open a terminal window, navigate to the directory where you downloaded Cloney, and use the `unzip` command to extract the contents of the downloaded zip file.
+    Select your desired Cloney version and run the presented command. This command downloads and installs the Cloney executable, prompting you to enter your sudo password.
 
-        ```bash
-        unzip cloney-linux-amd64.zip # Change the filename as needed.
-        ```
+    === "1.0.0 (Latest) <img class='twemoji lg middle' src='../images/cloney-logo-no-text-rounded.png' style='margin-left: 5px'>"
+        --8<-- "partials/downloads/linux-macos/_1.0.0.md"
 
-    1. **Edit Your Shell Profile:** Depending on your shell (bash, zsh, etc.), open the appropriate shell profile configuration file.
+    That's it! You've now successfully downloaded and installed Cloney on your system.
 
-        - For bash, you can edit the `.bashrc` file using a text editor like `nano` or `vim`:
-
-            ```bash
-            nano ~/.bashrc
-            ```
-
-        - For zsh, edit the `.zshrc` file:
-
-            ```bash
-            nano ~/.zshrc
-            ```
-
-    1. **Add Cloney to PATH:** Add the following line at the end of the file, replacing `/path/to/cloney` with the actual path to the directory where you extracted the Cloney executable file:
-        
-        ```bash
-        export PATH="$PATH:/path/to/cloney"
-        ```
-
-    1. **Save and Exit:** Save the file and exit the text editor.
-
-    1. **Reload Your Shell:** To apply the changes, either restart your terminal or run the following command:
-
-        ```bash
-        source ~/.bashrc   # For bash users.
-        source ~/.zshrc    # For zsh users.
-        ```
-
-    1. **Verify Installation:** Open a new terminal window, type `cloney`, and press Enter. If you see Cloney's command-line interface information, you have successfully added it to your PATH.
-
-That's it! Now, you've successfully unzipped the downloaded file and added Cloney to your system's PATH on Windows, Linux, or macOS, allowing you to use it from the command line.
+For information about the latest changes and to explore more versions, check out the [Changelog](https://github.com/ArthurSudbrackIbarra/cloney/blob/main/CHANGELOG.md) and [Releases](https://github.com/ArthurSudbrackIbarra/cloney/releases) on GitHub.
 
 ## Next Steps
 
