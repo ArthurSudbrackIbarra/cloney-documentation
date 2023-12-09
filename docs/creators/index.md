@@ -50,4 +50,10 @@ Welcome to the world of Cloney template creation! If you're interested in crafti
     Get acquainted with Go templates and their powerful syntax. These tutorials provide insights into using Go templates effectively in your Cloney Template Repository.
 
     [:octicons-arrow-right-24: Go Template Tutorials](go-template-tutorials/index.md)
+
+-   __Cloney Visual Studio Code Extension__
+    
+    Discover how to use the Cloney Visual Studio Code extension to enhance your Cloney template repository management experience within the familiar Visual Studio Code environment.
+
+    [:octicons-arrow-right-24: Cloney Visual Studio Code Extension](visual-studio-code-extension.md)
 </div>

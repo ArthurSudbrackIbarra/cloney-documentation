@@ -12,7 +12,7 @@ theme:
     - scheme: default
       primary: custom
       toggle:
-        icon: material/brightness-7 
+        icon: material/brightness-7
         name: Switch to dark mode
 
     # Palette toggle for dark mode.
@@ -60,13 +60,14 @@ nav:
           - joinSingleQuote: creators/functions/joinSingleQuote.md
           - os: creators/functions/os.md
       - Go Template Tutorials:
-        - creators/go-template-tutorials/index.md
-        - Variables: creators/go-template-tutorials/variables.md
-        - Contexts: creators/go-template-tutorials/contexts.md
-        - Conditional Statements: creators/go-template-tutorials/conditional-statements.md
-        - Loops and Iterations: creators/go-template-tutorials/loops-and-iterations.md
-        - Functions: creators/go-template-tutorials/functions.md
-        - Hyphens: creators/go-template-tutorials/hyphens.md
+          - creators/go-template-tutorials/index.md
+          - Variables: creators/go-template-tutorials/variables.md
+          - Contexts: creators/go-template-tutorials/contexts.md
+          - Conditional Statements: creators/go-template-tutorials/conditional-statements.md
+          - Loops and Iterations: creators/go-template-tutorials/loops-and-iterations.md
+          - Functions: creators/go-template-tutorials/functions.md
+          - Hyphens: creators/go-template-tutorials/hyphens.md
+      - Visual Studio Code Extension: creators/visual-studio-code-extension.md
 
   - Cloney Command-Line Interface (CLI):
       - commands/index.md
@@ -103,10 +104,10 @@ markdown_extensions:
 plugins:
   - social:
       cards_layout_options:
-        background_color: "#56c8cc" 
+        background_color: "#56c8cc"
   - search
   # - meta - Sponsors only for now.
-  
+
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
