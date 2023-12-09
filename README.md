@@ -51,3 +51,11 @@ After running this command, MkDocs will build your documentation site and start 
 To stop the Docker container and shut down the MkDocs development server, simply press `Ctrl+C` in your terminal. This will gracefully stop the container, and you can use the same `docker run` command to start it again whenever you need to work on your documentation.
 
 By following these steps, you can develop and preview your documentation using Cloney with MkDocs Material within a Docker container, ensuring a consistent and isolated environment for your project.
+
+### Deploying Cloney with MkDocs Material to GitHub Pages
+
+Once you're ready to deploy your documentation site, you can use the MkDocs Material Docker image to build your site and deploy it to GitHub Pages. The following command accomplishes this:
+
+```bash
+docker run --rm -it -v ~/.ssh:/root/.ssh -v ${PWD}:/docs squidfunk/mkdocs-material gh-deploy
+```
