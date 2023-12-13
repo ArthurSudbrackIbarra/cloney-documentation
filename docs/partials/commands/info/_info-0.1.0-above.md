@@ -27,7 +27,7 @@ Retrieve information about a template repository from a local path:
 cloney info ./path/to/my/template
 ```
 
-### Example 3: Info from Remote Repository URL
+## Example 3: Info from Remote Repository URL
 
 Retrieve information about a template repository from a remote repository URL:
 

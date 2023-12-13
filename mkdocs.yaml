@@ -59,6 +59,7 @@ nav:
           - joinDoubleQuote: creators/functions/joinDoubleQuote.md
           - joinSingleQuote: creators/functions/joinSingleQuote.md
           - os: creators/functions/os.md
+          - toFile: creators/functions/toFile.md
       - Go Template Tutorials:
           - creators/go-template-tutorials/index.md
           - Variables: creators/go-template-tutorials/variables.md

@@ -18,6 +18,7 @@ Here is a list of some of the Cloney Template Functions available for your use:
 - [`arch`](./arch.md): Returns the user's operating system architecture.
 - [`joinSingleQuote`](./joinSingleQuote.md): Joins the elements of a list with a specified separator and encloses them in single quotes.
 - [`joinDoubleQuote`](./joinDoubleQuote.md): Joins the elements of a list with a specified separator and encloses them in double quotes.
+- [`toFile`](./toFile.md): Writes the output of a template to a file.
 
 ## Sprig Functions
 
