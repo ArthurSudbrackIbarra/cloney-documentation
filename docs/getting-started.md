@@ -11,8 +11,8 @@ To begin your Cloney journey, follow these steps to install the Cloney CLI on yo
 
     Refer to the table below to choose the download button corresponding to your operating system's architecture:
 
-    === "1.0.0 (Latest) <img class='twemoji lg middle' src='../images/cloney-logo-no-text-rounded.png' style='margin-left: 5px'>"
-        --8<-- "partials/downloads/windows/_1.0.0.md"
+    === "1.1.0 (Latest) <img class='twemoji lg middle' src='../images/cloney-logo-no-text-rounded.png' style='margin-left: 5px'>"
+        --8<-- "partials/downloads/windows/_1.1.0.md"
 
     ### Step 2: Unzip the Downloaded File and Add Cloney to Your System's PATH
 
@@ -39,8 +39,8 @@ To begin your Cloney journey, follow these steps to install the Cloney CLI on yo
 
     Select your desired Cloney version and run the presented command. This command downloads and installs the Cloney executable, prompting you to enter your sudo password.
 
-    === "1.0.0 (Latest) <img class='twemoji lg middle' src='../images/cloney-logo-no-text-rounded.png' style='margin-left: 5px'>"
-        --8<-- "partials/downloads/linux-macos/_1.0.0.md"
+    === "1.1.0 (Latest) <img class='twemoji lg middle' src='../images/cloney-logo-no-text-rounded.png' style='margin-left: 5px'>"
+        --8<-- "partials/downloads/linux-macos/_1.1.0.md"
 
     That's it! You've now successfully downloaded and installed Cloney on your system.
 

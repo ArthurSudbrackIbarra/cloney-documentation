@@ -16,7 +16,7 @@ The Cloney Visual Studio Code extension is a powerful companion to the Cloney to
       <img src="https://raw.githubusercontent.com/ArthurSudbrackIbarra/cloney-vscode-extension/main/images/demo/metadata-file-snippets.png" style="border-radius: 10px;" alt="Metadata File Snippets"> 
     </p>
 
-- **.cloney-vars File Support:** Seamlessly define and manage variables in your Cloney template repositories with snippets and autocompletion in `.cloney-vars` files.
+- **`.cloney-vars` File Support:** Seamlessly define and manage variables in your Cloney template repositories with snippets and autocompletion in `.cloney-vars` files.
 
     <p align="center" style="margin: 1.5rem 0 0 0">
       <img src="https://raw.githubusercontent.com/ArthurSudbrackIbarra/cloney-vscode-extension/main/images/demo/variables-file-snippets.png" style="border-radius: 10px;" alt="Vars File Snippets"> 
@@ -28,7 +28,7 @@ The Cloney Visual Studio Code extension is a powerful companion to the Cloney to
       <img src="https://raw.githubusercontent.com/ArthurSudbrackIbarra/cloney-vscode-extension/main/images/demo/go-template-autocompletion.png" style="border-radius: 10px;" alt="Go Template Syntax Autocompletion"> 
     </p>
 
-### 2. Run Cloney Commands Directly from VSCode\_
+### 2. Run Cloney Commands Directly from VSCode
 
 - **Clone, Dry-run, and Validate Commands:** Execute essential Cloney commands directly from the Visual Studio Code user interface using the command palette.
 
