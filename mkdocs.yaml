@@ -68,8 +68,6 @@ nav:
           - Loops and Iterations: creators/go-template-tutorials/loops-and-iterations.md
           - Functions: creators/go-template-tutorials/functions.md
           - Hyphens: creators/go-template-tutorials/hyphens.md
-      - Visual Studio Code Extension: creators/visual-studio-code-extension.md
-
   - Cloney Command-Line Interface (CLI):
       - commands/index.md
       - clone: commands/clone.md
@@ -79,6 +77,7 @@ nav:
       - start: commands/start.md
       - validate: commands/validate.md
       - version: commands/version.md
+  - Visual Studio Code Extension: creators/visual-studio-code-extension.md
 
 markdown_extensions:
   - pymdownx.highlight:
