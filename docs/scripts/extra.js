@@ -6,12 +6,10 @@
 
 // Constants for the Cloney website.
 const CLONEY_GETTING_STARTED_ROUTE = "/getting-started/";
-const LOCAL_STORAGE_LATEST_TAG_KEY = "CLONEY_LATEST_TAG";
-const LOCAL_STORAGE_LATEST_TAG_FETCH_TIME_KEY = "CLONEY_LATEST_TAG_FETCH_TIME";
+const SESSION_STORAGE_LATEST_CLONEY_REPOSITORY_INFO_KEY =
+  "/cloney-documentation/.__source";
 
-// Constants for Cloney GitHub API and website elements.
-const CLONEY_GITHUB_API_URL =
-  "https://api.github.com/repos/ArthurSudbrackIbarra/cloney";
+// Constants for the website elements.
 const DOWNLOAD_LABELS = document.querySelectorAll(".download-label");
 const LINUX_MACOS_DOWNLOAD_LINK = document.querySelector(
   "#linux-macos-download-link"
@@ -19,38 +17,21 @@ const LINUX_MACOS_DOWNLOAD_LINK = document.querySelector(
 
 // Function to update the download buttons (Windows) and the download command (Linux/macOS) to the latest Cloney release.
 async function updateVersionReferences() {
-  // Retrieve the latest Cloney release information from local storage.
-  let latestTag = localStorage.getItem(LOCAL_STORAGE_LATEST_TAG_KEY);
-  const latestTagFetchTime = localStorage.getItem(
-    LOCAL_STORAGE_LATEST_TAG_FETCH_TIME_KEY
+  // Retrieve the latest Cloney release information from session storage.
+  let latestRepositoryInfo = sessionStorage.getItem(
+    SESSION_STORAGE_LATEST_CLONEY_REPOSITORY_INFO_KEY
   );
-  const currentTime = new Date().getTime();
-  const oneDay = 86400000;
 
-  // Check if the latest release information needs to be fetched from GitHub.
-  // The latest release information is fetched from GitHub once per day.
-  if (
-    !latestTag ||
-    !latestTagFetchTime ||
-    currentTime - latestTagFetchTime >= oneDay
-  ) {
-    // Fetch information about the latest Cloney releases from the GitHub API.
-    const response = await fetch(`${CLONEY_GITHUB_API_URL}/tags`);
-    const releases = await response.json();
-    
-    // Get the latest Cloney release version.
-    latestTag = releases[0]?.name;
-
-    // Update the latest Cloney release in local storage.
-    localStorage.setItem(LOCAL_STORAGE_LATEST_TAG_KEY, latestTag);
-    localStorage.setItem(LOCAL_STORAGE_LATEST_TAG_FETCH_TIME_KEY, currentTime);
+  // Wait for the information to be available in session storage.
+  while (!latestRepositoryInfo) {
+    await new Promise((resolve) => setTimeout(resolve, 200));
+    latestRepositoryInfo = sessionStorage.getItem(
+      SESSION_STORAGE_LATEST_CLONEY_REPOSITORY_INFO_KEY
+    );
   }
 
-  // Handle the case when the latest Cloney release information is not available.
-  if (!latestTag) {
-    console.error("Failed to retrieve the latest Cloney release from GitHub.");
-    return;
-  }
+  // Extract the latest Cloney release version from the retrieved information.
+  const latestTag = JSON.parse(latestRepositoryInfo).version;
 
   // Update the download labels with the latest release version.
   for (const label of DOWNLOAD_LABELS) {
