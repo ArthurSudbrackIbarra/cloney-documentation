@@ -1,0 +1,33 @@
+# Workflow Name: Validate Documentation Build
+
+# Description:
+# This workflow validates if the documentation builds correctly
+# when a pull request is created against the 'main' branch.
+
+on:
+  # Trigger when a PR is created against the main branch.
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    branches:
+      - main
+  # Trigger when a commit is pushed to the main branch.
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+      # Step 1: Check out the repository.
+      - uses: actions/checkout@v3
+
+      # Step 2: Use the MkDocs Material Docker image to build the documentation.
+      - name: Build the documentation
+        run: |
+          docker run --rm -it \
+            -v ${PWD}:/docs \
+            squidfunk/mkdocs-material build
