@@ -5,7 +5,9 @@
 */
 
 // Constants for the Cloney website.
-const CLONEY_GETTING_STARTED_PAGE_URL_SUFFIX = "/getting-started/";
+const CLONEY_GETTING_STARTED_ROUTE = "/getting-started/";
+const LOCAL_STORAGE_LATEST_TAG_KEY = "CLONEY_LATEST_TAG";
+const LOCAL_STORAGE_LATEST_TAG_FETCH_TIME_KEY = "CLONEY_LATEST_TAG_FETCH_TIME";
 
 // Constants for Cloney GitHub API and website elements.
 const CLONEY_GITHUB_API_URL =
@@ -17,12 +19,34 @@ const LINUX_MACOS_DOWNLOAD_LINK = document.querySelector(
 
 // Function to update the download buttons (Windows) and the download command (Linux/macOS) to the latest Cloney release.
 async function updateVersionReferences() {
-  // Fetch information about the latest Cloney releases from the GitHub API.
-  const response = await fetch(`${CLONEY_GITHUB_API_URL}/tags`);
-  const releases = await response.json();
+  // Retrieve the latest Cloney release information from local storage.
+  let latestTag = localStorage.getItem(LOCAL_STORAGE_LATEST_TAG_KEY);
+  const latestTagFetchTime = localStorage.getItem(
+    LOCAL_STORAGE_LATEST_TAG_FETCH_TIME_KEY
+  );
+  const currentTime = new Date().getTime();
+  const oneDay = 86400000;
 
-  // Choose the first release as the latest (modify the index if needed).
-  const latestTag = releases[0]?.name;
+  // Check if the latest release information needs to be fetched from GitHub.
+  // The latest release information is fetched from GitHub once per day.
+  if (
+    !latestTag ||
+    !latestTagFetchTime ||
+    currentTime - latestTagFetchTime >= oneDay
+  ) {
+    // Fetch information about the latest Cloney releases from the GitHub API.
+    const response = await fetch(`${CLONEY_GITHUB_API_URL}/tags`);
+    const releases = await response.json();
+    
+    // Get the latest Cloney release version.
+    latestTag = releases[0]?.name;
+
+    // Update the latest Cloney release in local storage.
+    localStorage.setItem(LOCAL_STORAGE_LATEST_TAG_KEY, latestTag);
+    localStorage.setItem(LOCAL_STORAGE_LATEST_TAG_FETCH_TIME_KEY, currentTime);
+  }
+
+  // Handle the case when the latest Cloney release information is not available.
   if (!latestTag) {
     console.error("Failed to retrieve the latest Cloney release from GitHub.");
     return;
@@ -87,7 +111,8 @@ function isARM64() {
 
 // Function to add a guide to the download buttons to assist users in selecting the correct download.
 function addGuideToDownloadButtons() {
-  if (window.location.href.includes(CLONEY_GETTING_STARTED_PAGE_URL_SUFFIX)) {
+  // Check if the script is executed on the Cloney website's "Getting Started" page.
+  if (window.location.href.includes(CLONEY_GETTING_STARTED_ROUTE)) {
     // Determine the appropriate download buttons based on the user's system.
     let downloadButtons = [];
     if (isWindows() && isAMD64()) {
@@ -106,7 +131,8 @@ function addGuideToDownloadButtons() {
 }
 
 // Update the version references when the script is executed on the Cloney website's "Getting Started" page.
-if (window.location.href.includes(CLONEY_GETTING_STARTED_PAGE_URL_SUFFIX)) {
+if (window.location.href.includes(CLONEY_GETTING_STARTED_ROUTE)) {
+  // Execute the updateVersionReferences function and then add a guide to the download buttons.
   updateVersionReferences().then(() => {
     addGuideToDownloadButtons();
   });
