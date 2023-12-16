@@ -28,6 +28,4 @@ jobs:
       # Step 2: Use the MkDocs Material Docker image to build the documentation.
       - name: Build the documentation
         run: |
-          docker run --rm -it \
-            -v ${PWD}:/docs \
-            squidfunk/mkdocs-material build
+          docker run --rm -v ${PWD}:/docs squidfunk/mkdocs-material build
