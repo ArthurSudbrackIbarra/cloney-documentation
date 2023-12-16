@@ -111,7 +111,7 @@ plugins:
 extra_css:
   - stylesheets/extra.css
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/ua-parser-js/src/ua-parser.min.js
+  - scripts/vendor/ua-parser.min.js
   - scripts/extra.js
 
 extra:
