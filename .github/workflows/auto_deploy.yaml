@@ -1,0 +1,35 @@
+# Workflow Name: Automatic Deploy
+
+# Description: This workflow automatically deploys the documentation to GitHub Pages
+# when a pull request is closed on the 'main' branch.
+
+on:
+  # Trigger the workflow when a pull request is closed on the 'main' branch.
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    # Give permissions to modify repository contents.
+    permissions:
+      contents: write
+
+    steps:
+      # Step 1: Check out the repository.
+      - uses: actions/checkout@v3
+        with:
+          # Check out the specific commit associated with the closed pull request.
+          ref: ${{ github.event.pull_request.merge_commit_sha }}
+
+      # Step 2: Use the MkDocs Material Docker image to deploy to GitHub Pages.
+      - name: Deploy to GitHub Pages
+        run: |
+          docker run --rm -it \
+            -v ~/.ssh:/root/.ssh \
+            -v ${PWD}:/docs \
+            squidfunk/mkdocs-material gh-deploy
