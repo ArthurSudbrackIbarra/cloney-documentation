@@ -5,11 +5,11 @@
 */
 
 // Constants for the Cloney website.
-const CLONEY_GETTING_STARTED_PAGE_URL_SUFFIX = "/getting-started/";
+const CLONEY_GETTING_STARTED_ROUTE = "/getting-started/";
+const SESSION_STORAGE_LATEST_CLONEY_REPOSITORY_INFO_KEY =
+  "/cloney-documentation/.__source";
 
-// Constants for Cloney GitHub API and website elements.
-const CLONEY_GITHUB_API_URL =
-  "https://api.github.com/repos/ArthurSudbrackIbarra/cloney";
+// Constants for the website elements.
 const DOWNLOAD_LABELS = document.querySelectorAll(".download-label");
 const LINUX_MACOS_DOWNLOAD_LINK = document.querySelector(
   "#linux-macos-download-link"
@@ -17,16 +17,21 @@ const LINUX_MACOS_DOWNLOAD_LINK = document.querySelector(
 
 // Function to update the download buttons (Windows) and the download command (Linux/macOS) to the latest Cloney release.
 async function updateVersionReferences() {
-  // Fetch information about the latest Cloney releases from the GitHub API.
-  const response = await fetch(`${CLONEY_GITHUB_API_URL}/tags`);
-  const releases = await response.json();
+  // Retrieve the latest Cloney release information from session storage.
+  let latestRepositoryInfo = sessionStorage.getItem(
+    SESSION_STORAGE_LATEST_CLONEY_REPOSITORY_INFO_KEY
+  );
 
-  // Choose the first release as the latest (modify the index if needed).
-  const latestTag = releases[0]?.name;
-  if (!latestTag) {
-    console.error("Failed to retrieve the latest Cloney release from GitHub.");
-    return;
+  // Wait for the information to be available in session storage.
+  while (!latestRepositoryInfo) {
+    await new Promise((resolve) => setTimeout(resolve, 200));
+    latestRepositoryInfo = sessionStorage.getItem(
+      SESSION_STORAGE_LATEST_CLONEY_REPOSITORY_INFO_KEY
+    );
   }
+
+  // Extract the latest Cloney release version from the retrieved information.
+  const latestTag = JSON.parse(latestRepositoryInfo).version;
 
   // Update the download labels with the latest release version.
   for (const label of DOWNLOAD_LABELS) {
@@ -87,7 +92,8 @@ function isARM64() {
 
 // Function to add a guide to the download buttons to assist users in selecting the correct download.
 function addGuideToDownloadButtons() {
-  if (window.location.href.includes(CLONEY_GETTING_STARTED_PAGE_URL_SUFFIX)) {
+  // Check if the script is executed on the Cloney website's "Getting Started" page.
+  if (window.location.href.includes(CLONEY_GETTING_STARTED_ROUTE)) {
     // Determine the appropriate download buttons based on the user's system.
     let downloadButtons = [];
     if (isWindows() && isAMD64()) {
@@ -106,7 +112,8 @@ function addGuideToDownloadButtons() {
 }
 
 // Update the version references when the script is executed on the Cloney website's "Getting Started" page.
-if (window.location.href.includes(CLONEY_GETTING_STARTED_PAGE_URL_SUFFIX)) {
+if (window.location.href.includes(CLONEY_GETTING_STARTED_ROUTE)) {
+  // Execute the updateVersionReferences function and then add a guide to the download buttons.
   updateVersionReferences().then(() => {
     addGuideToDownloadButtons();
   });
