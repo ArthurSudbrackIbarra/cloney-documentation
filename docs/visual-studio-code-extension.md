@@ -10,7 +10,7 @@ The Cloney Visual Studio Code extension is a powerful companion to the Cloney to
 
 ### 1. **Snippets and Autocompletion**
 
-- **`.cloney.yaml` Support:** Enjoy snippets and autocompletion when working with the [`.cloney.yaml`](cloney-metadata-file.md) metadata file. This ensures a smoother and error-free editing experience.
+- **`.cloney.yaml` Support:** Enjoy snippets and autocompletion when working with the [`.cloney.yaml`](creators/cloney-metadata-file.md) metadata file. This ensures a smoother and error-free editing experience.
 
     <p align="center" style="margin: 1.5rem 0 0 0">
       <img src="https://raw.githubusercontent.com/ArthurSudbrackIbarra/cloney-vscode-extension/main/images/demo/metadata-file-snippets.png" style="border-radius: 10px;" alt="Metadata File Snippets"> 
