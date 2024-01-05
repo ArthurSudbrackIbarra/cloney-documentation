@@ -13,8 +13,8 @@ docker run --rm \
   -v ${PWD}:/home/cloney \
   magicmanatee/cloney cloney clone \
   https://github.com/ArthurSudbrackIbarra/cloney-example.git \
-  -o /home/cloney/<DESIRED_REPOSITORY_NAME> \
-  -v /home/cloney/<VARIABLES_FILE_PATH>
+  --output /home/cloney/<DESIRED_REPOSITORY_NAME> \
+  --variables /home/cloney/<VARIABLES_FILE_PATH>
 ```
 
 - `${PWD}:/home/cloney`: Mounts your current working directory into `/home/cloney` within the Docker container.
