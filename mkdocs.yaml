@@ -77,7 +77,8 @@ nav:
       - start: commands/start.md
       - validate: commands/validate.md
       - version: commands/version.md
-  - Visual Studio Code Extension: creators/visual-studio-code-extension.md
+  - Visual Studio Code Extension: visual-studio-code-extension.md
+  - Docker Image: docker-image.md
 
 markdown_extensions:
   - pymdownx.highlight:
